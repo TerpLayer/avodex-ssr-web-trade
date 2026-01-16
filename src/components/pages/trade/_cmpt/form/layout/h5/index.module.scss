@@ -1,0 +1,158 @@
+.triggerBtns {
+  position: fixed;
+  z-index: 9;
+  //bottom: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding-block: 20px 34px;
+  padding-inline: 12px;
+
+  background-color: var(--az-theme-background-color);
+  box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.08);
+
+  [data-theme="dark"] & {
+    box-shadow: 0px -5px 20px #000;
+  }
+
+  > * {
+    flex: 1;
+    width: 0;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+
+    &.triggerBtnBuy {
+      background-color: var(--az-color-up);
+    }
+    &.triggerBtnSell {
+      background-color: var(--az-color-down);
+    }
+
+    + * {
+      margin-inline-start: 10px;
+    }
+  }
+}
+
+.drawer {
+  :global {
+    .ant-drawer-header {
+      padding-block: 2px 0;
+      padding-inline: 0 12px;
+
+      .ant-drawer-title {
+        > * {
+          border: none;
+        }
+      }
+    }
+    .ant-drawer-extra {
+      > button {
+        opacity: 0.2;
+        font-size: 16px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          opacity: 1;
+        }
+      }
+    }
+    .ant-drawer-body {
+      padding: 0;
+    }
+  }
+}
+
+.main {
+}
+
+.body {
+  padding: 20px 12px;
+}
+
+.navBtns {
+  display: flex;
+
+  > * {
+    flex: 1;
+    width: 50%;
+    height: 33px;
+    color: var(--az-theme-text-color-06);
+    background-color: var(--az-theme-text-color-008);
+    font-weight: 500;
+    font-size: 14px;
+
+    &:nth-child(1) {
+      border-radius: 3px 0 0 3px;
+    }
+    &:nth-child(2) {
+      border-radius: 0 3px 3px 0;
+    }
+
+    &.navBtns_buy {
+      color: #fff;
+      background-color: var(--az-color-up);
+    }
+    &.navBtns_sell {
+      color: #fff;
+      background-color: var(--az-color-down);
+    }
+  }
+}
+
+.tabsBtn {
+  > * {
+    height: 20px;
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: var(--az-color-primary);
+    background-color: var(--az-color-primary-bg);
+
+    + * {
+      margin-inline-start: 10px;
+    }
+  }
+}
+
+.link {
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: underline !important;
+  //text-decoration-style: dashed !important;
+  text-decoration-color: var(--az-theme-text-color-04) !important;
+  text-underline-offset: 2px;
+  color: var(--az-theme-text-color-04) !important;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
+
+  > span {
+    margin: 0 8px;
+    width: 1px;
+    height: 8px;
+    background-color: var(--az-theme-text-color-02);
+  }
+}
+
+.etfBtns {
+  > * {
+    flex: 1;
+    width: 0;
+  }
+
+  > button,
+  > * > button {
+    width: 100% !important;
+    height: 40px !important;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}

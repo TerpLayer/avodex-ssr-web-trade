@@ -1,0 +1,32 @@
+.main {
+  color: var(--az-theme-text-color-04);
+  //font-weight: 500;
+  font-size: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1;
+
+  > *:nth-child(1) {
+    cursor: pointer;
+    margin-inline-end: 5px;
+
+    > span {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-underline-offset: 2px;
+    }
+  }
+
+  > *:nth-child(2) {
+    display: inline-flex;
+    align-items: center;
+    color: var(--az-theme-text-color);
+
+    svg {
+      font-size: 17px;
+      margin-inline-end: 5px;
+    }
+  }
+}

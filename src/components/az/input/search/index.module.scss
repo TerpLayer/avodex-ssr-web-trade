@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  //background-color: #f2f3f5;
+  background-color: var(--az-theme-select-color);
+  //background-color: var(--az-theme-text-color-008);
+  height: 30px;
+  font-size: 14px;
+
+  > svg {
+    margin-block: 0;
+    margin-inline: 10px 8px;
+    color: var(--az-theme-text-color-02);
+  }
+
+  > button {
+    color: var(--az-theme-text-color-02);
+    padding: 0 8px;
+  }
+
+  //[data-theme="dark"] & {
+  //  background-color: #222225;
+  //}
+}
+
+.input {
+  flex: 1;
+  width: 0;
+  font-size: 13px;
+
+  &::placeholder {
+    color: var(--az-theme-text-color-02);
+    font-size: 13px;
+    transform: translate3d(0, 0.5px, 0);
+    font-weight: normal;
+  }
+}

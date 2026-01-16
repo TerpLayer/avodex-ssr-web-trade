@@ -1,0 +1,23 @@
+diff --git a/node_modules/@base-org/account/.DS_Store b/node_modules/@base-org/account/.DS_Store
+new file mode 100644
+index 0000000..2791211
+Binary files /dev/null and b/node_modules/@base-org/account/.DS_Store differ
+diff --git a/node_modules/@base-org/account/dist/.DS_Store b/node_modules/@base-org/account/dist/.DS_Store
+new file mode 100644
+index 0000000..f0988f2
+Binary files /dev/null and b/node_modules/@base-org/account/dist/.DS_Store differ
+diff --git a/node_modules/@base-org/account/dist/core/constants.js b/node_modules/@base-org/account/dist/core/constants.js
+index 3b50292..b1fe1c6 100644
+--- a/node_modules/@base-org/account/dist/core/constants.js
++++ b/node_modules/@base-org/account/dist/core/constants.js
+@@ -1,6 +1,6 @@
+-import pkg from '../../package.json' with { type: 'json' };
++// import pkg from '../../package.json' with { type: 'json' };
+ export const CB_KEYS_URL = 'https://keys.coinbase.com/connect';
+ export const CB_WALLET_RPC_URL = 'https://rpc.wallet.coinbase.com';
+-export const PACKAGE_NAME = pkg.name;
+-export const PACKAGE_VERSION = pkg.version;
++export const PACKAGE_NAME = '@base-org/account';//pkg.name;
++export const PACKAGE_VERSION = '1.1.1';//pkg.version;
+ //# sourceMappingURL=constants.js.map
+\ No newline at end of file

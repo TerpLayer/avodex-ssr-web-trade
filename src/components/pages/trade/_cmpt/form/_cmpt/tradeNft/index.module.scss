@@ -1,0 +1,130 @@
+.main {
+}
+
+.nav {
+  display: flex;
+  //justify-content: space-between;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 5px;
+
+  > *:nth-child(1) {
+    flex: none;
+    white-space: nowrap;
+    //font-weight: 500;
+    > *:nth-child(1) {
+      color: var(--az-theme-text-color-04);
+    }
+    > *:nth-child(2) {
+      margin: 0 2px;
+    }
+  }
+  > *:nth-child(2) {
+  }
+}
+
+.content {
+  .input + .input {
+    margin-top: 10px;
+  }
+
+  [data-theme="dark"][data-breakpoint="sm"] & {
+    .input {
+      &:not([aria-disabled="true"]) {
+        background-color: #242427;
+      }
+    }
+  }
+}
+
+.btnSubmit {
+  height: 40px;
+  margin-top: 15px;
+  width: 100%;
+  color: #fff !important;
+  //font-weight: 500;
+  font-size: 14px;
+  border-radius: 3px;
+
+  &[disabled] {
+    opacity: 0.65;
+  }
+
+  &.btnSubmit_buy {
+    background-color: var(--az-color-up);
+
+    &:not([disabled]):hover {
+      background-color: var(--az-color-up-hover);
+    }
+  }
+  &.btnSubmit_sell {
+    background-color: var(--az-color-down);
+
+    &:not([disabled]):hover {
+      background-color: var(--az-color-down-hover);
+    }
+  }
+
+  [data-layout="fullscreen"] & {
+    margin-top: 5px;
+  }
+}
+
+.orderConfirm {
+  margin-block: -6px -25px;
+  margin-inline: 0;
+
+  > *:nth-child(1) {
+    color: var(--az-theme-text-color-08);
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  > *:nth-child(2) {
+    margin-block: 8px 30px;
+    margin-inline: 0;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      line-height: 20px;
+
+      > *:nth-child(1) {
+        color: var(--az-theme-text-color-06);
+      }
+      > *:nth-child(2) {
+        color: var(--az-theme-text-color-08);
+      }
+
+      + div {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .orderConfirmCheckbox {
+    color: var(--az-theme-text-color-06);
+
+    [data-theme="dark"] & {
+      :global {
+        .ant-checkbox .ant-checkbox-inner {
+          border-color: var(--az-theme-text-color-06);
+        }
+      }
+    }
+  }
+}
+
+.feeInfo {
+  min-height: 50px;
+  padding-top: 5px;
+  color: var(--az-theme-text-color-04);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+
+  .feeInfoMain {
+    color: var(--az-theme-text-color);
+  }
+}

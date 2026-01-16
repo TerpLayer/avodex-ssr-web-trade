@@ -1,0 +1,79 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5px 12px;
+}
+
+.icons {
+  display: flex;
+
+  > button {
+    padding: 3px;
+    border-radius: 2px;
+    font-size: 0;
+    opacity: 0.5;
+
+    &.iconAtv {
+      background-color: var(--az-theme-text-color-008);
+      opacity: 1;
+    }
+
+    + button {
+      margin-inline-start: 15px;
+    }
+  }
+}
+.iconDiv {
+  > div {
+    width: 6px;
+    height: 2px;
+    background-color: var(--az-theme-text-color-06);
+    + div {
+      margin-top: 2px;
+    }
+  }
+}
+.icon_ask2bid {
+  > *:nth-child(1) {
+    margin-inline-end: 2px;
+    display: flex;
+    flex-direction: column;
+    > * {
+      width: 6px;
+      height: 6px;
+    }
+
+    > *:nth-child(1) {
+      background-color: var(--az-color-down);
+    }
+    > *:nth-child(2) {
+      background-color: var(--az-color-up);
+      margin-top: 2px;
+    }
+  }
+}
+.icon_bid {
+  > *:nth-child(1) {
+    width: 6px;
+    height: 14px;
+    background-color: var(--az-color-down);
+    margin-inline-end: 2px;
+  }
+}
+.icon_ask {
+  > *:nth-child(1) {
+    width: 6px;
+    height: 14px;
+    background-color: var(--az-color-up);
+    margin-inline-end: 2px;
+  }
+}
+
+.trigger {
+  font-size: 12px;
+  &:hover,
+  &:active {
+    color: #2f80ed !important;
+  }
+}

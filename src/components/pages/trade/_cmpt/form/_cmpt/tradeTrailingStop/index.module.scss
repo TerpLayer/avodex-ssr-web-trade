@@ -1,0 +1,239 @@
+.main {
+}
+
+.nav {
+  display: flex;
+  //justify-content: space-between;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 5px;
+
+  > *:nth-child(1) {
+    flex: none;
+    white-space: nowrap;
+    //font-weight: 500;
+    > *:nth-child(1) {
+      color: var(--az-theme-text-color-04);
+    }
+    > *:nth-child(2) {
+      margin: 0 2px;
+    }
+  }
+  > *:nth-child(2) {
+  }
+}
+
+.content {
+  .input + .input {
+    margin-top: 10px;
+  }
+
+  [data-theme="dark"][data-breakpoint="sm"] & {
+    .input,
+    .widget {
+      &:not([aria-disabled="true"]) {
+        background-color: #242427;
+      }
+    }
+  }
+
+  .slider {
+    [data-theme="dark"][data-breakpoint="sm"] & {
+      :global {
+        .ant-slider {
+          .ant-slider-dot {
+            background-color: var(--az-theme-pop-background-color);
+          }
+          .ant-slider-dot-active {
+            background-color: var(--az-color-primary);
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropTotal {
+  display: flex;
+  align-items: center;
+
+  > * {
+    display: inline-flex;
+
+    + * {
+      margin-inline-start: 3px;
+    }
+  }
+
+  svg {
+    font-size: 14px;
+    color: var(--az-theme-text-color-02);
+  }
+}
+
+.btnSubmit {
+  height: 40px;
+  margin-top: 15px;
+  width: 100%;
+  color: #fff !important;
+  //font-weight: 500;
+  font-size: 14px;
+  border-radius: 3px;
+
+  &[disabled] {
+    opacity: 0.65;
+  }
+
+  &.btnSubmit_buy {
+    background-color: var(--az-color-up);
+
+    &:not([disabled]):hover {
+      background-color: var(--az-color-up-hover);
+    }
+  }
+  &.btnSubmit_sell {
+    background-color: var(--az-color-down);
+
+    &:not([disabled]):hover {
+      background-color: var(--az-color-down-hover);
+    }
+  }
+
+  //[data-layout="fullscreen"] & {
+  //  margin-top: 15px;
+  //}
+  //[data-layout="advanced"] & {
+  //  margin-top: 15px;
+  //}
+}
+
+.orderConfirm {
+  margin-block: -6px -25px;
+  margin-inline: 0;
+
+  > *:nth-child(1) {
+    color: var(--az-theme-text-color-08);
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  > *:nth-child(2) {
+    margin-block: 8px 30px;
+    margin-inline: 0;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      line-height: 20px;
+
+      > *:nth-child(1) {
+        color: var(--az-theme-text-color-06);
+      }
+      > *:nth-child(2) {
+        color: var(--az-theme-text-color-08);
+      }
+
+      + div {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .orderConfirmCheckbox {
+    color: var(--az-theme-text-color-06);
+
+    [data-theme="dark"] & {
+      :global {
+        .ant-checkbox .ant-checkbox-inner {
+          border-color: var(--az-theme-text-color-06);
+        }
+      }
+    }
+  }
+}
+
+.canBuyOrSell {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 14px;
+
+  > *:nth-child(1) {
+    color: var(--az-theme-text-color-04);
+  }
+  > *:nth-child(2) {
+  }
+}
+
+.errStep {
+  min-height: 20px;
+  font-size: 12px;
+  color: var(--az-color-red);
+  line-height: 12px;
+  padding-top: 4px;
+  margin-bottom: -10px;
+}
+
+.dropdownTrigger {
+  white-space: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 12px;
+  color: var(--az-theme-text-color);
+  background-color: var(--az-theme-select-color);
+  border-radius: 3px;
+  margin-bottom: 10px;
+
+  &::after {
+    color: var(--az-theme-text-color-04);
+  }
+}
+
+.turnRate {
+  display: flex;
+  margin-bottom: 10px;
+
+  > *:nth-child(1) {
+    flex: 1;
+    width: 0;
+  }
+
+  > button {
+    flex: none;
+    margin-inline-start: 6px;
+    color: var(--az-theme-text-color);
+    background-color: var(--az-theme-select-color);
+    border-radius: 3px;
+    width: 46px;
+
+    &:hover {
+    }
+  }
+}
+
+.turnRateLab {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 2px;
+}
+
+.activePrice {
+  margin-bottom: 10px;
+
+  .activePriceLab {
+    font-size: 12px;
+    color: var(--az-theme-text-color);
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 2px;
+  }
+
+  > *:nth-child(2) {
+    margin-top: 10px;
+  }
+}

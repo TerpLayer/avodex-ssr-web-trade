@@ -1,0 +1,93 @@
+.main {
+  flex: 1 !important;
+  width: 0;
+  display: flex;
+  align-items: center;
+}
+
+.leftDiv {
+  flex: none;
+  display: flex;
+  align-items: center;
+  margin-inline-end: 5px;
+}
+
+.switchBtn {
+  font-size: 17px;
+}
+
+.content {
+  flex: 1;
+  width: 0;
+  overflow: hidden;
+}
+
+.contentDiv {
+  display: inline-block;
+  white-space: nowrap;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.animation {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: animation-translateX50;
+  animation-delay: 2s;
+
+  [dir="rtl"] & {
+    animation-name: animation-translateX50r;
+  }
+}
+
+@keyframes animation-translateX50 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes animation-translateX50r {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.elDiv {
+  display: inline-block;
+  white-space: nowrap;
+
+  > * {
+    margin: 0 8px;
+  }
+}
+
+.elDivOne {
+  font-size: 12px;
+  font-weight: 500;
+
+  > *:nth-child(1) {
+    color: var(--az-theme-text-color-1);
+  }
+  > *:nth-child(2) {
+    margin: 0 4px;
+  }
+  > *:nth-child(3) {
+    color: #666;
+    [data-theme="dark"] & {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &:hover {
+    > *:nth-child(1) {
+      color: var(--az-theme-text-color-06);
+    }
+  }
+}

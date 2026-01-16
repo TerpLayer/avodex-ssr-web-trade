@@ -1,0 +1,72 @@
+.nav {
+  > button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--az-theme-text-color-04);
+
+    &.navAtv {
+      color: var(--az-theme-text-color);
+    }
+
+    + button {
+      margin-inline-start: 28px;
+    }
+  }
+}
+
+.main {
+  margin-top: 30px;
+  .tab {
+    display: flex;
+    align-items: center;
+    & > div {
+      font-size: 20px;
+      color: var(--az-theme-text-color-04);
+      margin-inline-end: 28px;
+      &.active {
+        color: #333333;
+        font-weight: 600;
+      }
+      &:last-child {
+        margin-inline-end: 0;
+      }
+    }
+  }
+  .label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--az-theme-text-color-04);
+    .labelRight {
+      color: var(--az-theme-text-color-08);
+    }
+  }
+}
+.active {
+  cursor: pointer;
+  color: var(--az-color-primary);
+}
+
+.textLeft {
+  background-color: var(--az-theme-text-color-008);
+  input {
+    text-align: var(--az-dir-text-left);
+  }
+  [data-theme="light"] & {
+    background-color: #f8f8f8;
+  }
+}
+
+.loading {
+  width: 100%;
+  height: calc(100% - 60px);
+  top: 60px;
+  left: 0;
+}
+
+.relative {
+  position: relative;
+}

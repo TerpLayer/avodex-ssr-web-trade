@@ -1,0 +1,17 @@
+{
+  "locales": [
+    { "key": "en", "name": "en", "lab": "English" },
+    { "key": "ko", "name": "ko", "lab": "한국어" },
+    { "key": "ja", "name": "ja", "lab": "日本語" },
+    { "key": "hi", "name": "hi", "lab": "हिंदी" },
+    { "key": "in", "name": "id", "lab": "Bahasa Indonesia" },
+    { "key": "ru", "name": "ru", "lab": "русский" },
+    { "key": "es", "name": "es", "lab": "Español" },
+    { "key": "tr", "name": "tr", "lab": "Türkçe" },
+    { "key": "hk", "name": "zh-HK", "lab": "繁体中文" },
+    { "key": "cn", "name": "zh-CN", "lab": "简体中文" },
+    { "key": "vi", "name": "vi", "lab": "Tiếng Việt" },
+    { "key": "th", "name": "th", "lab": "ภาษาไทย" },
+    { "key": "fa", "name": "fa", "lab": "فارسی" }
+  ]
+}

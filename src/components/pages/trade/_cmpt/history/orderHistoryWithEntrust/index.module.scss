@@ -1,0 +1,43 @@
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  flex: none;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    border-bottom: 1px solid var(--az-theme-text-color-008);
+    padding: 5px 0;
+    margin: 0 12px;
+
+    > * {
+      > * + * {
+        margin-inline-start: 15px;
+      }
+    }
+  }
+
+  .barBtn {
+    padding: 1px 6px;
+    border-radius: 3px;
+    color: var(--az-theme-text-color-04);
+  }
+  .barBtnAtv {
+    color: var(--az-color-primary);
+    background-color: rgba(255, 190, 64, 0.1);
+  }
+}
+
+.content {
+  flex: 1;
+  height: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

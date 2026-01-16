@@ -1,0 +1,110 @@
+.main {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: var(--az-theme-select-color);
+  border-radius: 3px;
+
+  &:hover:not([aria-disabled="true"]) {
+    box-shadow: 0 0 0 1px var(--az-color-primary);
+  }
+
+  &[aria-disabled="true"] {
+    pointer-events: none;
+    background-color: var(--az-theme-text-color-008);
+  }
+}
+
+.atv {
+  box-shadow: 0 0 0 1px var(--az-color-primary);
+}
+.err {
+  box-shadow: 0 0 0 1px var(--az-color-red);
+  &:hover:not([aria-disabled="true"]) {
+    box-shadow: 0 0 0 1px var(--az-color-red);
+  }
+}
+
+.content {
+  flex: 1;
+  width: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  //font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.input {
+  flex: 1;
+  width: 0;
+  text-align: var(--az-dir-text-right);
+}
+
+.prefix {
+  flex: none;
+  padding-inline-end: 8px;
+  color: var(--az-theme-text-color-04);
+}
+
+.suffix {
+  flex: none;
+  padding-inline-start: 8px;
+}
+
+.btns {
+  flex: none;
+  border-inline-start: 1px solid var(--az-theme-text-color-008);
+  display: flex;
+  flex-direction: column;
+  width: 28px;
+  height: 100%;
+
+  > button {
+    flex: 1;
+
+    > span {
+      border-inline-start: 4px solid transparent;
+      border-inline-end: 4px solid transparent;
+    }
+
+    &.btnUp {
+      > span {
+        border-top: 0;
+        border-bottom: 4px solid var(--az-theme-text-color-04);
+      }
+
+      &:not([disabled]) {
+        &:hover,
+        &:focus,
+        &:active {
+          > span {
+            border-bottom: 4px solid var(--az-color-primary);
+          }
+        }
+      }
+    }
+    &.btnDown {
+      > span {
+        border-top: 4px solid var(--az-theme-text-color-04);
+        border-bottom: 0;
+      }
+
+      &:not([disabled]) {
+        &:hover,
+        &:focus,
+        &:active {
+          > span {
+            border-top: 4px solid var(--az-color-primary);
+          }
+        }
+      }
+    }
+  }
+
+  > span {
+    height: 1px;
+    background-color: var(--az-theme-text-color-008);
+  }
+}

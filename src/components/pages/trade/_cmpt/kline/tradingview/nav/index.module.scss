@@ -1,0 +1,24 @@
+.main {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  color: var(--az-theme-text-color-04);
+  font-weight: 400;
+  font-size: 12px;
+
+  > * + * {
+    margin-inline-start: 20px;
+  }
+
+  svg {
+    font-size: 14px;
+  }
+}
+
+.atv {
+  color: var(--az-color-primary);
+}
+
+.btnIcon {
+  color: var(--az-theme-text-color-06);
+}

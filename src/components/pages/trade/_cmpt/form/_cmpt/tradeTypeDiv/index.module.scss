@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 20px 15px;
+  padding-inline: 12px;
+
+  > *:nth-child(1) {
+    flex: none;
+    margin-inline-end: 20px;
+    > * {
+      //font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--az-theme-text-color-04);
+
+      &.atv {
+        color: var(--az-color-primary);
+      }
+
+      + * {
+        margin-inline-start: 20px;
+      }
+    }
+  }
+  > *:nth-child(2) {
+    flex: 1;
+    width: 0;
+  }
+}
+
+.rightDiv {
+  text-align: var(--az-dir-text-right);
+}
+
+.option {
+  display: inline-flex;
+  align-items: center;
+
+  > button {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--az-color-primary);
+
+    + button {
+      margin-inline-start: 10px;
+    }
+  }
+
+  > span {
+    margin: 0 8px;
+    width: 1px;
+    height: 8px;
+    background-color: var(--az-theme-text-color-02);
+  }
+}

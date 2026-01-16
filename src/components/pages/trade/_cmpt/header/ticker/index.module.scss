@@ -1,0 +1,136 @@
+.price {
+  padding: 0 12px;
+
+  > p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  > div {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.content {
+  width: 0;
+}
+
+.contentUl {
+  white-space: nowrap;
+
+  > div {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    padding: 0 13px;
+
+    > p {
+      color: var(--az-theme-text-color-06);
+      margin-bottom: 6px;
+    }
+  }
+
+  [data-breakpoint="sm"] & {
+    padding: 3px 0;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      margin: 6px 0;
+      padding-block: 0;
+      padding-inline: 4px 12px;
+
+      > p {
+        flex: none;
+        margin-block: 0;
+        margin-inline: 0 4px;
+      }
+      > div {
+        white-space: normal;
+        word-break: break-all;
+        text-align: var(--az-dir-text-right);
+      }
+    }
+  }
+}
+
+.star {
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  font-size: 18px;
+  margin: 3px;
+
+  [data-theme="dark"] & {
+    border: 1px solid #242427;
+  }
+}
+
+.popover {
+  padding-top: 0px;
+
+  :global {
+    .ant-popover-arrow {
+      display: none;
+    }
+    .ant-popover-inner-content {
+      padding: 20px 10px;
+    }
+  }
+}
+
+.popoverContent {
+  width: 260px;
+
+  > *:nth-child(1) {
+    color: #333;
+    [data-theme="dark"] & {
+      color: #fff;
+    }
+
+    > p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    > div {
+      white-space: pre-line;
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: 6px;
+    }
+  }
+  > *:nth-child(2) {
+    margin-top: 13px;
+    display: flex;
+    justify-content: flex-end;
+
+    > * {
+      margin-inline-start: 10px;
+      color: #333;
+
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1;
+      padding: 6px 8px;
+      border-radius: 4px;
+
+      &:nth-child(1) {
+        background-color: #ebebeb;
+
+        [data-theme="dark"] & {
+          color: #fff;
+          background-color: rgba(255, 255, 255, 0.08);
+        }
+      }
+      &:nth-child(2) {
+        background-color: var(--az-color-primary);
+      }
+    }
+  }
+}

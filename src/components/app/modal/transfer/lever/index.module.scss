@@ -1,0 +1,125 @@
+.main {
+  > p {
+    color: var(--az-theme-text-color-04);
+    margin-block: 20px 10px;
+    margin-inline: 0;
+  }
+}
+
+.trigger {
+}
+
+.li {
+  width: 100%;
+  line-height: 1;
+  text-align: var(--az-dir-text-left);
+
+  > div {
+    line-height: 18px;
+    font-weight: 500;
+    color: var(--az-theme-text-color);
+  }
+
+  > small {
+    color: var(--az-theme-text-color-04);
+  }
+}
+
+.liAtv {
+  > div {
+    color: var(--az-color-primary);
+  }
+}
+
+.currencyDiv {
+  display: flex;
+  justify-content: space-between;
+
+  > * {
+    width: 47%;
+    background-color: var(--az-theme-text-color-008);
+    border-radius: 4px;
+    padding-block: 14px 7px;
+    padding-inline: 16px 10px;
+
+    display: flex;
+    align-items: flex-start;
+
+    > img {
+      flex: none;
+      width: 20px;
+      height: 20px;
+    }
+
+    > div {
+      flex: auto;
+      margin-inline-start: 6px;
+      text-align: var(--az-dir-text-left);
+      color: var(--az-theme-text-color-04);
+
+      > div {
+        > b {
+          color: var(--az-theme-text-color);
+          font-weight: 500;
+        }
+
+        > small {
+          font-weight: 400;
+          font-size: 12px;
+          margin-inline-start: 4px;
+        }
+      }
+
+      > b {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: var(--az-theme-text-color);
+      }
+
+      > p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        min-height: 18px;
+        margin: 0;
+      }
+    }
+
+    [data-theme="light"] & {
+      background-color: #f8f8f8;
+    }
+
+    &[disabled] {
+      > img {
+        opacity: 0.6;
+      }
+
+      > div {
+        > div {
+          > b {
+            color: var(--az-theme-text-color-04);
+          }
+          > small {
+            color: var(--az-theme-text-color-02);
+          }
+        }
+        > b {
+          color: var(--az-theme-text-color-04);
+        }
+        > p {
+          color: var(--az-theme-text-color-02);
+        }
+      }
+    }
+  }
+
+  > .btnAtv {
+    box-shadow: 0 0 0 1px var(--az-color-primary);
+  }
+}
+
+.noData {
+  color: var(--az-theme-text-color-02);
+  font-style: italic;
+}

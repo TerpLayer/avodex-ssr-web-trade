@@ -1,0 +1,94 @@
+.main {
+  :global {
+    .ant-modal-body {
+      min-height: 350px;
+    }
+  }
+}
+
+.info {
+  margin-bottom: 20px;
+  color: var(--az-theme-text-color);
+}
+
+.account {
+  display: flex;
+  align-items: flex-end;
+
+  > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: var(--az-theme-text-color-04);
+
+    > * + * {
+      margin-top: 10px;
+    }
+  }
+
+  > button {
+    flex: none;
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+.leverSymbol {
+}
+
+.currency {
+  margin-top: 20px;
+
+  > *:nth-child(1) {
+    color: var(--az-theme-text-color-04);
+  }
+  > * + * {
+    margin-top: 10px;
+  }
+}
+
+.amount {
+  margin-top: 20px;
+
+  > *:nth-child(1) {
+    color: var(--az-theme-text-color-04);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    > *:nth-child(2) {
+      font-size: 12px;
+      > span {
+        color: var(--az-theme-text-color);
+        margin-inline-end: 4px;
+      }
+    }
+  }
+  > * + * {
+    margin-top: 10px;
+  }
+}
+
+.inputNumber {
+  background-color: var(--az-theme-text-color-008);
+
+  input {
+    text-align: var(--az-dir-text-left);
+  }
+
+  [data-theme="light"] & {
+    background-color: #f8f8f8;
+  }
+}
+
+.btnAll {
+  font-weight: 500;
+  color: var(--az-color-primary);
+}
+
+.errOpenTips {
+  color: var(--az-color-red);
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 4px;
+}

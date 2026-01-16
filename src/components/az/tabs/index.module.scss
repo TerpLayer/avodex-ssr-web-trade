@@ -1,0 +1,40 @@
+.main {
+  flex: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--az-theme-text-color-008);
+  padding: 0 12px;
+
+  > *:nth-child(1) {
+  }
+
+  > *:nth-child(2) {
+    flex: none;
+    margin-inline-start: 5px;
+  }
+}
+
+.btn {
+  padding-top: 2px;
+  line-height: 33px;
+  border-bottom: 2px solid transparent;
+  //font-weight: 500;
+  font-size: 14px;
+  color: var(--az-theme-text-color-04);
+
+  + button {
+    margin-inline-start: 20px;
+  }
+
+  &.atv {
+    color: var(--az-theme-text-color);
+    &:not(.only) {
+      border-color: var(--az-theme-text-color);
+    }
+  }
+  &.only {
+    cursor: text;
+    user-select: text;
+  }
+}
