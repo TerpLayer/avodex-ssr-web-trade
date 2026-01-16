@@ -1,0 +1,34 @@
+.main {
+  button + button {
+    margin-top: 10px;
+  }
+}
+
+.btnLogin,
+.btnRegister {
+  height: 40px;
+  margin-top: 30px;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 3px;
+  font-weight: 500;
+
+  [data-layout="fullscreen"] & {
+    margin-top: 15px;
+  }
+}
+
+.btnLogin {
+  background-color: var(--az-color-primary);
+  color: #fff;
+
+  [data-theme="dark"] & {
+    background-color: var(--az-color-primary);
+    color: #fff;
+  }
+}
+
+.btnRegister {
+  background-color: var(--az-color-primary);
+  color: rgba(0, 0, 0, 0.8);
+}

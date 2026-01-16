@@ -1,0 +1,14 @@
+lokalise2 file download \
+  --token b81111821574d959829d4a8a8211290eae1a4549 \
+  --project-id 7933815169008e33b33090.93173126 \
+  --format json \
+  --original-filenames=false \
+  --bundle-structure %LANG_ISO%.%FORMAT% \
+  --add-newline-eof=true \
+  --indentation=2sp \
+  --export-empty-as skip \
+  --export-sort a_z \
+  --json-unescaped-slashes \
+  --include-pids 6353664069008e787e81a9.28664321,8166238269008e81aefd47.82512868,9485052569008e8a3e3631.34760386 \
+  --all-platforms \
+  --unzip-to ./src/locales/lang

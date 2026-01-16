@@ -1,0 +1,37 @@
+.container {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  padding: 0 17px;
+  -webkit-box-pack: justify;
+  //justify-content: flex-end;
+  // justify-content: space-between;
+  height: 24px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  border-top: 2px solid;
+  display: flex;
+  align-items: center;
+  background-color: var(--az-theme-background-color);
+  border-color: var(--az-theme-body-color);
+
+  > * {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    flex: none;
+  }
+}
+
+.splitLine {
+  width: 1px;
+  height: 12px;
+  margin: 0 15px;
+  background-color: #ebebeb;
+
+  [data-theme="dark"] & {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+}

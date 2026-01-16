@@ -1,0 +1,155 @@
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  flex: none;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--az-theme-text-color-04);
+  font-size: 12px;
+  border-bottom: 1px solid var(--az-theme-text-color-008);
+
+  .opts {
+    display: flex;
+    align-items: center;
+
+    > * + * {
+      margin-inline-start: 12px;
+    }
+  }
+}
+
+.checkbox {
+  font-size: 12px;
+  color: var(--az-theme-text-color-04);
+
+  > span + span {
+    padding-inline-end: 0;
+  }
+}
+
+.atv {
+  color: var(--az-color-primary);
+}
+
+.content {
+  flex: 1;
+  height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 12px;
+}
+
+.card {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  padding: 12px 0;
+  color: var(--az-theme-text-color);
+  border-bottom: 1px solid var(--az-theme-text-color-008);
+
+  .cardNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+    > *:nth-child(1) {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 500;
+    }
+    > *:nth-child(2) {
+      text-align: var(--az-dir-text-right);
+    }
+  }
+
+  .cardNavSub {
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+  }
+
+  .cardUl {
+    .cardLi {
+      display: flex;
+      justify-content: space-between;
+
+      > *:nth-child(1) {
+        color: var(--az-theme-text-color-04);
+        margin-inline-end: 10px;
+        flex: none;
+        display: flex;
+        align-items: center;
+      }
+      > *:nth-child(2) {
+        text-align: var(--az-dir-text-right);
+        word-break: break-all;
+
+        small {
+          color: var(--az-theme-text-color-04);
+        }
+      }
+
+      + .cardLi {
+        margin-top: 9px;
+      }
+    }
+  }
+}
+
+.li2 {
+  display: flex;
+
+  > * {
+    flex: 1;
+    width: 0;
+
+    + * {
+      margin-inline-start: 10px;
+    }
+  }
+}
+
+.dropdown {
+  > p {
+    margin: 0;
+    color: var(--az-theme-text-color-04);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+
+  > button {
+    white-space: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 12px;
+    color: var(--az-theme-text-color-08);
+    background-color: var(--az-theme-text-color-008);
+    border-radius: 3px;
+
+    [data-theme="light"] & {
+      background-color: #f8f8f8;
+    }
+  }
+}
+
+.overlay {
+  :global {
+    .ant-dropdown-menu-item {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.main {
+  flex: none;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  background: rgba(255, 190, 64, 0.2);
+  color: #ee1472;
+
+  [data-theme="light"] & {
+    color: #c48c21;
+  }
+
+  > svg {
+    font-size: 13px;
+    flex: none;
+  }
+
+  > div {
+    flex: 1;
+    width: 0;
+    margin: 0 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  > button {
+    flex: none;
+    color: var(--az-theme-text-color-02);
+  }
+}

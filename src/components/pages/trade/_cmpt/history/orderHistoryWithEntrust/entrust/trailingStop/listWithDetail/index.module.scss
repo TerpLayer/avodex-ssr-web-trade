@@ -1,0 +1,120 @@
+.main {
+}
+
+.nav {
+  cursor: pointer;
+}
+
+.arrow {
+  display: inline-flex;
+  align-items: center;
+
+  &::before {
+    margin-top: -2px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin-inline-end: 10px;
+    border-top: 1px solid var(--az-theme-text-color-02);
+    border-inline-end: 1px solid var(--az-theme-text-color-02);
+    transform: rotate(45deg);
+  }
+
+  &.arrowOpen {
+    &::before {
+      transform: rotate(135deg);
+    }
+  }
+}
+
+//.state {
+//  display: inline-flex;
+//  align-items: center;
+//
+//  > i {
+//    width: 6px;
+//    height: 6px;
+//    border-radius: 100%;
+//    background-color: var(--az-theme-text-color);
+//    margin-inline-end: 5px;
+//
+//    &.state_green {
+//      background-color: var(--az-color-green);
+//    }
+//    &.state_yellow {
+//      background-color: var(--az-color-primary);
+//    }
+//  }
+//}
+
+.content {
+  position: relative;
+  margin: 0 12px;
+
+  //box-shadow: 0 2px 8px var(--az-theme-text-color-008);
+  background-color: var(--az-theme-pop-background-color);
+  box-shadow: var(--az-theme-pop-box-shadow);
+}
+
+.subBar {
+  background-color: var(--az-theme-select-color);
+  display: flex;
+  padding: 10px 16px;
+  font-size: 12px;
+
+  > * {
+    display: inline-flex;
+    align-items: center;
+    color: var(--az-theme-text-color-04);
+
+    > div {
+      display: inline-flex;
+      align-items: center;
+      color: var(--az-theme-text-color);
+
+      button {
+        margin-inline-start: 5px;
+      }
+    }
+
+    + * {
+      margin-inline-start: 20px;
+    }
+  }
+}
+
+.AzScrollBarY {
+  max-height: 200px;
+}
+
+.subBody {
+  display: flex;
+  flex-direction: column;
+  min-height: 80px;
+}
+
+.subNav {
+  flex: none;
+  font-weight: 400;
+  color: var(--az-theme-text-color-04);
+}
+
+.subBody .subLi {
+  margin: 0 16px;
+}
+
+.subContent {
+  flex: 1;
+  position: relative;
+}
+
+.noData {
+  position: absolute;
+}
+
+.tipStr {
+  cursor: pointer;
+  text-decoration: underline dashed;
+  text-underline-offset: 4px;
+  //text-decoration-color: var(--az-theme-text-color-04);
+}

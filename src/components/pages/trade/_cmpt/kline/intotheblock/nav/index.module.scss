@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+  :global {
+    .itb-widget {
+      .powered-by {
+        margin: 0 !important;
+
+        .text {
+          margin-top: 0;
+          color: var(--az-theme-text-color-04);
+        }
+
+        .logo {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

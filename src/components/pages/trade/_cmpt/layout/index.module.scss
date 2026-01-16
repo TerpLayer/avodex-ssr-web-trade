@@ -1,0 +1,14 @@
+.main {
+  color: var(--az-theme-text-color);
+  background-color: #060606;
+  display: flex;
+  flex-direction: column;
+  // padding-bottom: 24px;
+}
+
+.header {
+  flex: none;
+  height: 55px;
+  background-color: var(--az-theme-background-color);
+  border-top: 2px solid var(--az-theme-body-color);
+}

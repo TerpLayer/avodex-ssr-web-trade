@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0 12px;
+  padding-inline: 5px;
+
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--az-theme-text-color-04);
+
+  > button {
+    flex: 1;
+    padding: 0 2px;
+    //transition: 0.2s;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: 0;
+
+      &:not([disabled]) {
+        color: var(--az-theme-text-color);
+      }
+    }
+
+    &.user {
+      flex: none;
+      min-width: 28px;
+      margin-top: -2px;
+
+      &.atv {
+        color: var(--az-color-primary);
+      }
+    }
+  }
+}
+
+.atv {
+  color: var(--az-theme-text-color);
+  font-weight: 500;
+}

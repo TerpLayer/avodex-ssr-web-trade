@@ -1,0 +1,66 @@
+.main {
+  padding: 5px 12px;
+  display: flex;
+  align-items: center;
+
+  > * {
+    font-size: 12px;
+
+    + * {
+      margin-inline-start: 10px;
+    }
+  }
+
+  :global {
+    .ant-picker {
+      background: transparent;
+      border-color: var(--az-theme-text-color-008);
+      box-shadow: none;
+      .ant-picker-input > input {
+        font-size: 12px;
+        line-height: 22px;
+        color: var(--az-theme-text-color);
+
+        &::placeholder {
+          color: var(--az-theme-text-color-04);
+        }
+      }
+      .ant-picker-separator {
+        color: var(--az-theme-text-color-02);
+      }
+    }
+  }
+}
+
+.lab {
+  color: #666;
+
+  &.atv {
+    color: #2f80ed;
+  }
+}
+
+.btn {
+  padding: 3px 5px;
+  border-radius: 3px;
+  //color: var(--az-theme-text-color-04);
+  //background-color: var(--az-theme-select-color);
+}
+
+.btnSearch {
+  color: #fff !important;
+  background-color: #2f80ed;
+  padding: 3px 29px;
+  height: 32px;
+}
+
+.btnReset {
+  color: #fff !important;
+  background-color: #141414;
+  padding: 3px 29px;
+  height: 32px;
+
+  [data-theme="light"] & {
+    background-color: #f5f5f5;
+  }
+}

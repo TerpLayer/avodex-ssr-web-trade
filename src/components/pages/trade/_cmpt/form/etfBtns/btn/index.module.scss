@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    margin-inline-start: 15px;
+    border-top-color: var(--az-theme-text-color-04);
+  }
+
+  [data-layout="advanced"] & {
+    padding: 0 8px;
+  }
+
+  &:hover {
+    &::after {
+      border-top-color: currentColor;
+    }
+  }
+}
+
+.etf_box {
+  span {
+    &:first-child {
+      //margin-inline-end: 2px;
+    }
+  }
+}

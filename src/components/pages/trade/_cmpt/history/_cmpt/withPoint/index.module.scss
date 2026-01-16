@@ -1,0 +1,25 @@
+.main {
+  display: inline-flex;
+  align-items: center;
+
+  > i {
+    display: inline-flex;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: var(--az-theme-text-color);
+    margin-inline-end: 5px;
+
+    &.success {
+      background-color: var(--az-color-green);
+    }
+
+    &.error {
+      background-color: var(--az-color-red);
+    }
+
+    &.warn {
+      background-color: var(--az-color-primary);
+    }
+  }
+}

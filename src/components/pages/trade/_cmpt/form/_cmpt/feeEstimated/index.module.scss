@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+
+  > * {
+    line-height: 1;
+  }
+}
+
+.trigger {
+  // cursor: pointer;
+  // text-decoration: underline dashed;
+  // text-underline-offset: 2px;
+  // text-decoration-color: var(--az-theme-text-color-04);
+  color: var(--az-theme-text-color-04);
+  font-weight: 400;
+  margin-inline-end: 20px;
+}
+
+.tipCon {
+  white-space: pre-line;
+}

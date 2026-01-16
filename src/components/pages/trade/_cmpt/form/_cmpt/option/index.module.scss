@@ -1,0 +1,30 @@
+.main {
+  flex: none;
+  margin-inline-start: 5px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+
+  > button {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--az-color-primary);
+
+    svg {
+      //color: var(--az-theme-text-color-06);
+      color: var(--az-theme-text-color);
+    }
+
+    + button {
+      margin-inline-start: 10px;
+    }
+  }
+
+  > span {
+    margin: 0 8px;
+    width: 1px;
+    height: 8px;
+    background-color: var(--az-theme-text-color-02);
+  }
+}

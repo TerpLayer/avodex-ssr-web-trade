@@ -1,0 +1,114 @@
+.main {
+}
+
+.container {
+  flex: 1 1 877px;
+  min-height: 877px;
+  margin-block: 4px 0;
+  margin-inline: 0;
+  display: flex;
+
+  //[data-breakpoint="xl"] & {
+  //  .order2trade {
+  //    width: 32.86%;
+  //  }
+  //}
+}
+
+.leftCon {
+  width: 78.57%;
+  padding-inline-end: 4px;
+  display: flex;
+  flex-direction: column;
+
+  //[data-breakpoint="xl"] & {
+  //  width: 82%;
+  //}
+}
+
+.leftConTop {
+  flex: 1;
+  height: 0;
+  margin-bottom: 4px;
+  width: 100%;
+  display: flex;
+}
+
+.leftConTopEmpty {
+  flex: none;
+  width: 4px;
+}
+
+.kline {
+  flex: 1 1 74.8%;
+  width: 0;
+  //width: 74.54%;
+  background-color: #0a0a0a;
+
+  //[data-breakpoint="xl"] & {
+  //  flex: 1 1 46%;
+  //}
+}
+
+.order2trade {
+  flex: 1 1 25.2%;
+  //width: 25.46%;
+  //padding-inline-start: 4px;
+  position: relative;
+
+  .order2tradeDiv {
+    background-color: #0a0a0a;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    > *:nth-child(1) {
+      flex: none;
+    }
+    > *:not(:nth-child(1)) {
+      flex: 1;
+      height: 0;
+      display: none;
+      flex-direction: column;
+
+      &.order2tradeDivVisible {
+        display: flex;
+      }
+    }
+  }
+
+  //[data-breakpoint="xl"] & {
+  //  display: flex;
+  //
+  //  .order2tradeEmpty {
+  //    flex: none;
+  //    width: 4px;
+  //  }
+  //
+  //  .order,
+  //  .trade {
+  //    flex: 1;
+  //    width: 50%;
+  //    background-color: var(--az-theme-background-color);
+  //    height: 100%;
+  //    display: flex;
+  //    flex-direction: column;
+  //  }
+  //}
+}
+
+.history {
+  flex: none;
+  height: 345px;
+  background-color: var(--az-theme-background-color);
+}
+
+.form2asset {
+  width: 21.43%;
+  //height: 100%;
+  background-color: #0a0a0a;
+
+  //[data-breakpoint="xl"] & {
+  //  width: 18%;
+  //}
+}

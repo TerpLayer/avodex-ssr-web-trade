@@ -1,0 +1,18 @@
+.main {
+  appearance: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: transparent;
+  color: var(--az-theme-text-color);
+
+  &::placeholder {
+    color: var(--az-theme-text-color-04);
+    font-weight: 500;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,7 @@
+# top-most EditorConfig file 表示是最顶层的配置文件，发现设为true时，才会停止查找.editorconfig文件
+root = true
+
+# 4 space indentation 控制文件类型的缩进大小
+[**]
+indent_style = space
+indent_size = 2

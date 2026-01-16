@@ -1,0 +1,160 @@
+.main {
+  position: relative;
+  background-color: #111111;
+  border-radius: 10px;
+  min-height: 500px;
+  overflow: hidden;
+
+  > div {
+    position: relative;
+  }
+}
+
+.ImgCopyTrading {
+  position: absolute;
+  height: 31px;
+  top: 20px;
+  right: 10px;
+}
+
+.ImgBitCoin {
+  position: absolute;
+  width: 135px;
+  top: 136px;
+  right: 7px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+  z-index: 1;
+  color: #fff;
+
+  > img {
+    margin-inline-end: 6px;
+  }
+}
+
+.user {
+  padding: 27px 18px;
+  display: flex;
+  align-items: flex-start;
+
+  > img {
+    flex: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    margin-inline-end: 10px;
+    background-color: #ddd;
+  }
+
+  > div {
+    flex: 1;
+
+    > *:nth-child(1) {
+      color: #ffffff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1;
+      padding: 6px 0;
+      word-break: break-word;
+    }
+    > *:nth-child(2) {
+      display: inline-flex;
+      color: #2d2d2e;
+      background-color: var(--az-color-primary);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 18px;
+      padding: 0 12px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.order {
+  padding-block: 13px 69px;
+  padding-inline: 18px;
+
+  > *:nth-child(1) {
+    > *:nth-child(1) {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    > *:nth-child(2) {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1;
+      margin-block: 10px 8px;
+      margin-inline: 0;
+    }
+
+    > *:nth-child(3) {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+    }
+  }
+
+  > *:nth-child(2) {
+    margin-top: 40px;
+
+    > div {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1;
+
+      > *:nth-child(1) {
+        color: rgba(255, 255, 255, 0.4);
+      }
+      > *:nth-child(2) {
+        color: var(--az-color-primary);
+      }
+
+      + div {
+        margin-top: 7px;
+      }
+    }
+  }
+}
+
+.banner {
+  background-color: #1d1d1d;
+  padding: 12px 16px;
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .bannerXT {
+    color: var(--az-color-primary);
+  }
+
+  > *:nth-child(1) {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+
+    > * + * {
+      margin-top: 6px;
+    }
+  }
+  > *:nth-child(2) {
+    display: inline-flex;
+    font-size: 0;
+    background-color: #fff;
+    padding: 4px;
+  }
+}

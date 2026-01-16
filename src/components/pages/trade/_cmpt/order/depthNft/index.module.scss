@@ -1,0 +1,59 @@
+.main {
+  flex: 1;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  flex: none;
+  display: flex;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--az-theme-text-color-04);
+  padding: 5px 12px;
+
+  > *:nth-child(1) {
+    width: 34%;
+  }
+
+  > *:nth-child(2) {
+    width: 33%;
+    text-align: var(--az-dir-text-right);
+  }
+
+  > *:nth-child(3) {
+    width: 33%;
+    text-align: var(--az-dir-text-right);
+  }
+}
+
+.content {
+  flex: 1;
+  height: 0;
+  flex-basis: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  //padding-bottom: 2px;
+}
+
+.scrollWindowAsk,
+.scrollWindowBid {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.scrollWindowAsk {
+  justify-content: flex-end;
+}
+
+.scrollWindowOnlyAsk {
+  justify-content: flex-end;
+  > div {
+    flex: 0 1 auto !important;
+  }
+}
+.scrollWindowOnlyBid {
+}

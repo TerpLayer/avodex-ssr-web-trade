@@ -1,0 +1,56 @@
+.AzScrollBarY {
+  height: 100%;
+}
+
+.main {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: calc(760px + 24px);
+}
+
+.nav {
+  flex: none;
+  font-weight: 400;
+  color: var(--az-theme-text-color-04);
+}
+
+.ul {
+}
+
+.main .li {
+  min-width: 760px;
+
+  > * {
+    &:last-child {
+      width: 60px;
+    }
+  }
+}
+
+.atv {
+  color: var(--az-color-primary);
+}
+
+.noData {
+  padding: 0;
+}
+
+.alertModalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 0 -14px;
+  margin-inline: 0;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+
+  > svg {
+    font-size: 72px;
+    color: var(--az-color-primary);
+    margin-bottom: 25px;
+  }
+}

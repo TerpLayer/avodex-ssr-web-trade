@@ -1,0 +1,56 @@
+.main {
+  :global {
+    .ant-modal-body {
+      padding: 0 !important;
+    }
+  }
+}
+
+.nav {
+  padding: 10px 20px;
+
+  > *:nth-child(1) {
+    color: var(--az-theme-text-color-04);
+
+    + * {
+      margin-inline-start: 10px;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 20px;
+}
+
+.ul {
+  border-bottom: 1px solid var(--az-theme-text-color-008);
+  padding: 10px 0;
+  .li {
+    display: flex;
+    justify-content: space-between;
+
+    > *:nth-child(1) {
+      color: var(--az-theme-text-color-04);
+      margin-inline-end: 10px;
+      flex: none;
+      display: flex;
+      align-items: center;
+    }
+    > *:nth-child(2) {
+      text-align: var(--az-dir-text-right);
+      word-break: break-all;
+
+      small {
+        color: var(--az-theme-text-color-04);
+      }
+    }
+
+    + .li {
+      margin-top: 9px;
+    }
+  }
+}

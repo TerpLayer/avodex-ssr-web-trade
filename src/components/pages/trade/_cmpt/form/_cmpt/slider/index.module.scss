@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  height: 40px;
+  align-items: center;
+
+  > *:nth-child(1) {
+    flex: 1;
+    width: 0;
+  }
+
+  :global {
+    .ant-slider-with-marks {
+      margin: 10px 6px;
+    }
+  }
+}
+
+.btnAll {
+  flex: none;
+  margin-inline-start: 20px;
+  color: var(--az-color-primary);
+  //font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}

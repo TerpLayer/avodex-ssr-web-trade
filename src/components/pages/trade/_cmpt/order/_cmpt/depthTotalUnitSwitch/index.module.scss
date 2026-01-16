@@ -1,0 +1,14 @@
+.main {
+}
+
+.trigger {
+  justify-content: flex-end;
+  font-weight: 500;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #2f80ed !important;
+  }
+  //font-size: 12px;
+  //line-height: 14px;
+}

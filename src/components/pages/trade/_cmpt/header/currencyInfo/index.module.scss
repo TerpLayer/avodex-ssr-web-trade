@@ -1,0 +1,126 @@
+.main {
+  position: relative;
+  display: flex;
+}
+
+.hover {
+  &:hover {
+    .content {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.target {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--az-theme-text-color-04);
+  text-decoration: underline;
+  text-decoration-color: var(--az-theme-text-color-04) !important;
+  text-underline-offset: 2px;
+
+  > h2 {
+    //margin-inline-start: 4px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--az-theme-text-color-06);
+    font-size: 12px;
+  }
+}
+
+.content {
+  visibility: hidden;
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  top: 150%;
+  font-size: 12px;
+  background-color: var(--az-theme-pop-background-color);
+  box-shadow: var(--az-theme-pop-box-shadow);
+  width: 350px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  opacity: 0;
+
+  a {
+    color: var(--az-theme-text-color);
+  }
+}
+.contentHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-bottom: 1px solid var(--az-theme-text-color-008);
+
+  > p {
+    > b {
+      font-size: 16px;
+      margin-inline-end: 5px;
+    }
+    > span {
+      color: var(--az-theme-text-color-04);
+    }
+  }
+}
+.contentBody {
+  padding: 10px;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    font-size: 12px;
+    line-height: 1;
+
+    > p {
+      flex: none;
+      color: var(--az-theme-text-color-04);
+    }
+
+    > div {
+      word-break: break-all;
+      text-align: var(--az-dir-text-right);
+    }
+  }
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.etf_currency_detail {
+  padding: 20px;
+  .etf_currency_hd {
+    height: 30px;
+    margin-bottom: 10px;
+    h2 {
+      display: block;
+      height: 30px;
+      font-size: 14px;
+      color: var(--az-theme-text-color-08);
+      img {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-inline-end: 8px;
+      }
+    }
+  }
+  .etf_currency_bd {
+    .etf_currency_item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      span {
+        color: #999;
+      }
+      i {
+        font-style: normal;
+      }
+    }
+  }
+}

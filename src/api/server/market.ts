@@ -1,0 +1,13 @@
+import { Request } from "@az/base";
+const { AzAxios4 } = Request;
+import { getServerSideDomain } from "utils/method";
+
+const URL = getServerSideDomain({
+  inner: "http://ryzen-biz-market/public/",
+  local: "/sapi/v4/market/public/",
+});
+
+//获取交易对
+export function get_symbol(config?) {
+  return AzAxios4.get(URL + `symbol`, config);
+}

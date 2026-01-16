@@ -1,0 +1,33 @@
+.main {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  color: #999;
+  [data-theme="dark"] & {
+    color: #fff;
+  }
+
+  > * {
+    position: absolute;
+    bottom: 0;
+    width: 13%;
+    background-color: currentColor;
+
+    &:nth-child(1) {
+      left: 0;
+      height: 33.33%;
+    }
+    &:nth-child(2) {
+      left: 29%;
+      height: 50%;
+    }
+    &:nth-child(3) {
+      left: 58%;
+      height: 80%;
+    }
+    &:nth-child(4) {
+      left: 87%;
+      height: 100%;
+    }
+  }
+}

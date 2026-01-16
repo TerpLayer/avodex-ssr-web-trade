@@ -1,0 +1,23 @@
+.main {
+  cursor: pointer;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 12px;
+
+  > *:nth-child(1) {
+    width: 34%;
+  }
+
+  > *:not(:nth-child(1)) {
+    width: 33%;
+    text-align: var(--az-dir-text-right);
+  }
+
+  &:hover {
+    background-color: var(--az-theme-select-color);
+  }
+}

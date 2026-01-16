@@ -1,0 +1,26 @@
+.main {
+  position: relative;
+  border-top: 1px solid var(--az-theme-text-color-008);
+
+  a:not([href]) {
+    cursor: auto;
+  }
+}
+
+.btn {
+  position: absolute;
+  z-index: 1;
+  right: 6px;
+  top: 6px;
+  font-size: 14px;
+  color: rgba(204, 204, 204, 1);
+
+  [data-theme="dark"] & {
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,13 @@
+.main {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  color: var(--az-theme-text-color-04);
+  font-weight: 400;
+  font-size: 12px;
+
+  :global(.ant-slider) {
+    width: 160px;
+    margin: 6px 15px;
+  }
+}

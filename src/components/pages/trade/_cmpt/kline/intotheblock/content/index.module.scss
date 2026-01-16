@@ -1,0 +1,167 @@
+.main {
+  position: relative;
+  flex: 1;
+  display: flex;
+}
+
+.loading {
+  background-color: var(--az-theme-background-color);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  > * {
+    margin: 10px;
+    border: 1px solid var(--az-theme-text-color-008);
+  }
+
+  :global {
+    .itb-widget {
+      min-width: initial;
+      min-height: 200px;
+
+      .legends .legend-color-0 span.green-transparent {
+        background-color: #56bd8a;
+      }
+
+      .green-bubble {
+        fill: #56bd8a;
+      }
+
+      div[color="#7ED321"] .title {
+        border-color: #56bd8a;
+      }
+
+      .red-bubble {
+        fill: #ed6366;
+      }
+
+      .legends .legend-color-0 span.red-transparent {
+        background: #ed6366;
+      }
+
+      div[color="#D95038"] .title {
+        border-color: #ed6366;
+      }
+
+      .card-chart {
+        box-shadow: none;
+        border: none;
+      }
+
+      .card-chart .chart-title {
+        padding-bottom: 0px;
+      }
+
+      .card-chart .chart-title .inner-title {
+        font-size: 12px;
+      }
+
+      .divider {
+        margin-bottom: 0px;
+      }
+
+      .MuiTooltip-tooltip {
+        border-color: #ffbe41;
+      }
+
+      .MuiTooltip-tooltip a {
+        color: #ffbe41;
+      }
+
+      .highcharts-yaxis-grid .highcharts-grid-line {
+        stroke: #3f3f3f;
+      }
+
+      .highcharts-yaxis-labels text,
+      #itb-charts-container .itb-widget .highcharts-xaxis-labels text {
+        color: #8a95b3 !important;
+        fill: #8a95b3 !important;
+        font-size: 9px !important;
+      }
+
+      .highcharts-yaxis text {
+        color: #8a95b3 !important;
+        fill: #8a95b3 !important;
+        font-size: 10px !important;
+      }
+
+      .highlights-title {
+        display: none;
+      }
+
+      .highcharts-legend-item text {
+        font-size: 10px !important;
+      }
+
+      .highlight-container {
+        .title {
+          font-size: 9px;
+        }
+
+        .text-container {
+          font-size: 11px;
+        }
+
+        .text-container .date {
+          display: none;
+        }
+      }
+
+      .without-highlight-percentage-odd .highlight-container:nth-child(2n + 1) {
+        display: none;
+      }
+
+      .without-highlight-percentage .highlight-container:nth-child(2n) {
+        display: none;
+      }
+
+      .without-highlight-percentage .highcharts-plot-line-label {
+        font-size: 10px;
+        transform: translate(35px, 0px);
+      }
+
+      .itb-chart-tabs {
+        position: absolute;
+      }
+
+      #widget-in-and-out-of-the-money-around-price .itb-chart-tabs {
+        top: -35px;
+      }
+
+      .itb-chart-tabs .itb-tab-button {
+        color: #ffbe41;
+        border-color: #ffbe41;
+        background-color: transparent;
+        font-size: 10px;
+        padding: 3px;
+      }
+
+      .itb-chart-tabs div.itb-tab-button.itb-tab-button-active {
+        background-color: #f4a2034d;
+        color: #ffbe41;
+      }
+
+      .chart-info {
+        display: none;
+      }
+
+      .legends {
+        height: 45px;
+        font-size: 10px;
+        color: #8d9aa4;
+      }
+
+      .cccECj {
+        min-height: 100px;
+
+        h3 {
+          color: #b9b9ba;
+        }
+      }
+    }
+  }
+}

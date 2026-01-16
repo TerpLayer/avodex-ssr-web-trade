@@ -1,0 +1,39 @@
+.main {
+  > p {
+    margin: 0;
+    color: var(--az-theme-text-color-04);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+
+    > button {
+      flex: 1;
+      width: 0;
+
+      white-space: nowrap;
+      width: 100%;
+      justify-content: space-between;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 10px 12px;
+      color: var(--az-theme-text-color-08);
+      background-color: var(--az-theme-text-color-008);
+      border-radius: 3px;
+
+      [data-theme="light"] & {
+        background-color: #f8f8f8;
+      }
+    }
+
+    > span {
+      margin: 0 10px;
+    }
+  }
+}

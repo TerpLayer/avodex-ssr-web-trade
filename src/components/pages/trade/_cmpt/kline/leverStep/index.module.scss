@@ -1,0 +1,25 @@
+.main {
+  border-top: 1px solid var(--az-theme-text-color-008);
+  padding: 10px 12px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--az-theme-text-color-04);
+
+  //> *:nth-child(1) {
+  //  color: var(--az-theme-text-color-04);
+  //}
+
+  button {
+    font-weight: 500;
+    cursor: auto !important;
+  }
+
+  &.login {
+    button {
+      cursor: pointer !important;
+      color: var(--az-color-primary);
+    }
+  }
+}
