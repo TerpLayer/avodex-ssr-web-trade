@@ -68,7 +68,7 @@ const useEntrustOrder = () => {
     }
   }, []);
   useEffect(() => {
-    if (!isLogin || !token) return;
+    if (!isLogin) return;
 
     const wsMsg_order = { topic: "order", event: "entrust_order" };
 
@@ -78,7 +78,7 @@ const useEntrustOrder = () => {
       SocketPrivate.removeChannel(wsMsg_order);
       store.entrustOrder.updateState({ wsEntrustOrder: undefined });
     };
-  }, [isLogin, token]);
+  }, [isLogin]);
 };
 
 export default useEntrustOrder;

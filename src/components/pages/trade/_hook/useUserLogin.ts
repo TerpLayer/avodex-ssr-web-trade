@@ -227,7 +227,7 @@ const useUserLogin = () => {
     };
   }, [isLogin, name, isLever]);
   useEffect(() => {
-    if (!isLogin || !token) return;
+    if (!isLogin) return;
     const wsMsg_balance = { topic: "balance", event: "balance" };
     const wsMsg_order = { topic: "order", event: "order" };
     SocketPrivate.addChannel(wsMsg_balance, wsCbBalance);
@@ -239,9 +239,9 @@ const useUserLogin = () => {
       store.balances.updateState({ wsOrder: undefined });
       store.balances.updateState({ wsBalance: undefined });
     };
-  }, [isLogin, token]);
+  }, [isLogin]);
   useEffect(() => {
-    if (!isLogin || !token || !isLever) return;
+    if (!isLogin || !isLever) return;
     const wsMsg_lever = { topic: "lever", event: "lever_balance" };
     SocketPrivate.addChannel(wsMsg_lever, (data: WsBalanceProps) => {
       if (!store.market.isLever || store.market.name !== data.s) return;
@@ -266,7 +266,7 @@ const useUserLogin = () => {
     return () => {
       SocketPrivate.removeChannel(wsMsg_lever);
     };
-  }, [isLogin, token, isLever]);
+  }, [isLogin, isLever]);
   /*
   useEffect(() => {
     if (!isLogin || !leverWsUserKey) return;

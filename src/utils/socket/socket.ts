@@ -87,7 +87,7 @@ const Socket: (arg: InputProps) => OutputProps = ({ url, token }) => {
         method: MethodEnum.subscribe,
         params: [topic],
       };
-      _setTokenToObj(sendMsg);
+      // _setTokenToObj(sendMsg);
       SendMsgAry.push(sendMsg);
 
       console.log(`%c【WS TOPIC=${topic} subscribe】新增`, "color:#1890ff", message);
@@ -175,7 +175,7 @@ const Socket: (arg: InputProps) => OutputProps = ({ url, token }) => {
       method: MethodEnum.unsubscribe,
       params: [topic],
     };
-    _setTokenToObj(sendMsg);
+    // _setTokenToObj(sendMsg);
     SendMsgAry.push(sendMsg);
 
     console.log(`%c【WS TOPIC=${topic} unsubscribe】无其他事件，订阅销毁！%o`, "color:#9e1068", { Tree, message });
@@ -232,7 +232,7 @@ const Socket: (arg: InputProps) => OutputProps = ({ url, token }) => {
         method: MethodEnum.subscribe,
         params: topicAry,
       };
-      _setTokenToObj(sendMsg);
+      // _setTokenToObj(sendMsg);
       SendMsgAry = [sendMsg];
 
       _send();

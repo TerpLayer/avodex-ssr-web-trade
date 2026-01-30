@@ -31,9 +31,11 @@ const Main: React.FC<Props> = ({ className }) => {
   const vipInfoLab = useMemo(() => {
     if (!userVipInfo) return {};
     const taker = Big(userVipInfo.spotTakerFeeRate || 0)
+      .plus(process.env.NEXT_PUBLIC_BUILDER_FEE_SPOT_TAKER || 0)
       .times(100)
       .toFixed(4);
     const maker = Big(userVipInfo.spotMakerFeeRate || 0)
+      .plus(process.env.NEXT_PUBLIC_BUILDER_FEE_SPOT_MAKER || 0)
       .times(100)
       .toFixed(4);
 

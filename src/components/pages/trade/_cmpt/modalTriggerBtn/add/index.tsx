@@ -1,7 +1,7 @@
-import React, { HTMLAttributes, useCallback } from "react";
+import React, { HTMLAttributes, useCallback, useContext } from "react";
 import { observer } from "mobx-react-lite";
 import cx from "classnames";
-import { Hooks, Util } from "@az/base";
+import { Hooks, Util, Context } from "@az/base";
 import store from "store";
 import { $g } from "utils/statistics";
 
@@ -10,6 +10,7 @@ import ModalAlert from "components/antd/modal/alert";
 import Transfer from "components/pages/trade/_cmpt/modalTriggerBtn/transfer";
 const { useTranslation } = Hooks;
 const { getUrl } = Util;
+const { AzContext } = Context;
 import SvgClose from "assets/icon-svg/close2.svg";
 import SvgIcon from "@az/SvgIcon";
 
@@ -17,6 +18,7 @@ import IconTransfer from "./icon/transfer";
 import IconDeposit from "./icon/deposit";
 import IconBuy from "./icon/buy";
 import styles from "./index.module.scss";
+import { message } from "antd";
 
 interface Props extends Omit<HTMLAttributes<HTMLButtonElement>, "title"> {
   currency?: string;
@@ -24,15 +26,25 @@ interface Props extends Omit<HTMLAttributes<HTMLButtonElement>, "title"> {
 
 const Deposit: React.FC<Props> = ({ className, currency }) => {
   const t = useTranslation();
+  const [appState, appDispatch] = useContext(AzContext);
+  const { walletStatus } = appState;
+
   // const router = useRouter();
   const { isLogin } = store.user;
   const { currencyObj } = store.currency;
+  const azContext = useContext(AzContext);
 
   const handleClick = useCallback(() => {
-    if (!isLogin) return;
+    // if (!isLogin) return;
 
     if (currencyObj && currency && currencyObj[currency].type === "NFT") {
       location.href = "/wallet/account/common/deposit/softnote?currency=" + currency;
+      return;
+    }
+
+    if (!isLogin || walletStatus === "disconnected") {
+      message.warning(t("WalletModal.loginRequired"), 3);
+      appDispatch({ payload: { showWalletModal: true } });
       return;
     }
 
@@ -115,7 +127,7 @@ const Deposit: React.FC<Props> = ({ className, currency }) => {
         </div>
       ),
     });
-  }, [isLogin, currency, currencyObj]);
+  }, [azContext, isLogin, currency, currencyObj]);
 
   return (
     <button className={cx("btnTxt", className)} onClick={handleClick}>

@@ -1,7 +1,7 @@
 import React, { HTMLAttributes, useCallback } from "react";
 import { observer } from "mobx-react-lite";
 import cx from "classnames";
-import { Hooks } from "@az/base";
+import { Hooks, LoginPromptButton } from "@az/base";
 import store from "store";
 
 import AzSvg from "components/az/svg";

@@ -24,7 +24,9 @@ const useFeeEstimated = ({ value = "", isMaker = false, isBuy = false }: ArgProp
   const vipFee = useMemo(() => {
     if (!userVipInfo) return;
     const rate = userVipInfo[isMaker ? "spotMakerFeeRate" : "spotTakerFeeRate"];
-    return Big(rate || 0).toFixed();
+    return Big(rate || 0)
+      .plus((isMaker ? process.env.NEXT_PUBLIC_BUILDER_FEE_SPOT_MAKER : process.env.NEXT_PUBLIC_BUILDER_FEE_SPOT_TAKER) || 0)
+      .toFixed();
   }, [isMaker, userVipInfo]);
   const suffixNumStr = useMemo(() => {
     if (!tradeDeductionFee || !tradeDeductionFee.deductEnable || vipFee === undefined) return vipFee;
