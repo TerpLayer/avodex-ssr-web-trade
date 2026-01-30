@@ -1,7 +1,7 @@
-import React, { HTMLAttributes, useCallback } from "react";
+import React, { HTMLAttributes, useCallback, useContext } from "react";
 import { observer } from "mobx-react-lite";
 import cx from "classnames";
-import { Hooks } from "@az/base";
+import { Hooks, Context, LoginPromptButton } from "@az/base";
 import store from "store";
 import { $g } from "utils/statistics";
 
@@ -68,9 +68,9 @@ const Transfer: React.FC<Props> = ({ className, children, isIcon, onClick, curre
   }, [isLogin, isLever, currency, name]);
 
   return (
-    <button className={cx("btnTxt", className)} onClick={handleClick}>
+    <LoginPromptButton className={cx("btnTxt", className)} onClick={handleClick}>
       {children || (isIcon ? <AzSvg icon={"transfer"} /> : t("trade.transfer"))}
-    </button>
+    </LoginPromptButton>
   );
 };
 

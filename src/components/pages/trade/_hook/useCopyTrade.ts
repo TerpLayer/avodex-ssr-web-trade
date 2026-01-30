@@ -100,7 +100,7 @@ const useCopyTrade = () => {
     }
   }, []);
   useEffect(() => {
-    if (!isLogin || !token || isLever || !userStatus) return;
+    if (!isLogin || isLever || !userStatus) return;
 
     const event = store.copyTrade.isFollower ? "follower_order" : "leader_order";
     const wsMsg_order = { topic: "order", event };
@@ -110,7 +110,7 @@ const useCopyTrade = () => {
     return () => {
       SocketPrivate.removeChannel(wsMsg_order);
     };
-  }, [isLogin, token, isLever, userStatus]);
+  }, [isLogin, isLever, userStatus]);
 };
 
 export default useCopyTrade;

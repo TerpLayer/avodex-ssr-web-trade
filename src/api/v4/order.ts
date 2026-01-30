@@ -10,7 +10,7 @@ export function get_order(config?) {
 
 //单笔下单
 export function post_order(config?) {
-  return AzAxios4.post(URL + `order`, null, config);
+  return AzAxios4.post(URL + `order`, null, { ...config, withBuilderFeeRate: "spot" });
 }
 
 //单笔撤单
@@ -123,7 +123,7 @@ export function post_copyTradeOrderStopProfitLoss(config?) {
 
 //计划委托，单笔下单
 export function post_entrustOrder(config?) {
-  return AzAxios4.post(URL + `entrust-order`, null, config);
+  return AzAxios4.post(URL + `entrust-order`, null, { ...config, withBuilderFeeRate: "spot" });
 }
 
 //计划委托，当前挂单查询
