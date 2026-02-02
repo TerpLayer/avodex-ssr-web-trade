@@ -19,12 +19,12 @@
 }
 
 .btnLogin {
-  background-color: var(--az-color-primary);
-  color: #fff;
+  background: linear-gradient(119deg, #bafb65 0.28%, #88e76e 100%);
+  color: #333;
 
   [data-theme="dark"] & {
-    background-color: var(--az-color-primary);
-    color: #fff;
+    background: linear-gradient(119deg, #bafb65 0.28%, #88e76e 100%);
+    color: #333;
   }
 }
 

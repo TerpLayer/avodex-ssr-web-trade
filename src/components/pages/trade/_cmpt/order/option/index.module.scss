@@ -74,6 +74,6 @@
   font-size: 12px;
   &:hover,
   &:active {
-    color: #2f80ed !important;
+    color: var(--az-color-primary) !important;
   }
 }

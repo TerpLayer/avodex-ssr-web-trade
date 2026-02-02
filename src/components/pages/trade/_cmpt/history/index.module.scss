@@ -50,8 +50,8 @@
       }
     }
     .ant-checkbox.ant-checkbox-checked .ant-checkbox-inner {
-      background-color: #2f80ed;
-      border-color: #2f80ed !important;
+      background-color: var(--az-color-primary);
+      border-color: var(--az-color-primary) !important;
       &::after {
         z-index: 10;
       }
