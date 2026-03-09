@@ -749,7 +749,7 @@
   "WalletModal.selectToken": "Select Token",
   "WalletModal.sendRequest": "Send request",
   "WalletModal.signMessage": "Sign message",
-  "WalletModal.signMessageDescription": "Please sign this message to verify your identity, create a secure key and access your AZX account to start trading.",
+  "WalletModal.signMessageDescription": "Please sign this message to verify your identity, create a secure key and access your AVODEX account to start trading.",
   "WalletModal.signing": "Signing...",
   "WalletModal.spotAccount": "Spot Account",
   "WalletModal.spotValue": "Spot value",

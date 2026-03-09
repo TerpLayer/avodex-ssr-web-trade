@@ -743,7 +743,7 @@
   "WalletModal.selectToken": "選擇代幣",
   "WalletModal.sendRequest": "發送請求",
   "WalletModal.signMessage": "簽署訊息",
-  "WalletModal.signMessageDescription": "請簽署此訊息以驗證您的身份，建立安全金鑰並存取您的 AZX 帳戶以開始交易。",
+  "WalletModal.signMessageDescription": "請簽署此訊息以驗證您的身份，建立安全金鑰並存取您的 AVODEX 帳戶以開始交易。",
   "WalletModal.signing": "正在簽名...",
   "WalletModal.spotAccount": "現貨帳戶",
   "WalletModal.spotValue": "現貨價值",
