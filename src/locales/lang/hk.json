@@ -809,7 +809,7 @@
   "seo.futures.information.risk-limit.title": "AZVerse 永续合约风险限额 – 持仓与杠杆控制",
   "seo.futures.information.trade-rules.description": "查看 AZVerse 永续合约交易规则，包括订单类型、执行逻辑、资金费率时程和合约规格等详细说明。",
   "seo.futures.information.trade-rules.title": "AZVerse 永续合约交易规则 – 合约说明与规范",
-  "seo.futures.title": "{symbol} 永续合约交易 – AZVerse 期货",
+  "seo.futures.title": "{symbol} 永续合约交易 – AvoDex 期货",
   "seo.home.dashboard.stats.description": "浏览 AZVerse 实时市场统计，包括资金费率、指数价格和关键交易指标，为您的交易决策提供支持。",
   "seo.home.dashboard.stats.title": "统计仪表板 – 市场与资金费率数据",
   "seo.home.dashboard.transaction.description": "查看 AZVerse 的交易历史记录，包括存取款、交易和永续强平记录，让活动一目了然。",

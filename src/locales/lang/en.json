@@ -815,7 +815,7 @@
   "seo.futures.information.risk-limit.title": "AZVerse Futures Risk Limit – Position & Leverage Control",
   "seo.futures.information.trade-rules.description": "Review the official futures trade rules on AZVerse, including order types, execution logic, funding rate schedule, and contract specifications.",
   "seo.futures.information.trade-rules.title": "AZVerse Futures Trade Rules – Contract Specifications",
-  "seo.futures.title": "{symbol} Futures Trade – AZVerse Perpetual Contracts",
+  "seo.futures.title": "{symbol} Futures Trade – AvoDex Perpetual Contracts",
   "seo.home.dashboard.stats.description": "Explore live market stats including funding rates, index prices and key trading metrics on AZVerse. Designed to inform your trading decisions.",
   "seo.home.dashboard.stats.title": "Dashboard Stats – Market & Funding Data",
   "seo.home.dashboard.transaction.description": "Review your transaction history on AZVerse, including deposits, withdrawals, trades and perpetual liquidations in a clear activity log.",
