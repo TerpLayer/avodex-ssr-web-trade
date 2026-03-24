@@ -7,11 +7,11 @@
         background: var(--az-theme-pop-background-color);
 
         .datepicker-header {
-          color: var(--az-theme-text-color);
+          color: var(--az-colorv2-text-primary);
         }
 
         .datepicker-navbar {
-          border-color: var(--az-theme-text-color-008);
+          border-color: var(--az-colorv2-border-disabled);
         }
 
         .datepicker-viewport::after {
@@ -23,11 +23,11 @@
         }
 
         .datepicker-wheel {
-          border-color: var(--az-theme-text-color-008);
+          border-color: var(--az-colorv2-border-disabled);
         }
 
         .datepicker-scroll li {
-          color: var(--az-theme-text-color);
+          color: var(--az-colorv2-text-primary);
 
           &.disabled {
             opacity: 0.15;
@@ -35,7 +35,7 @@
         }
 
         .datepicker-navbar-btn {
-          color: var(--az-color-primary);
+          color: var(--az-colorv2-brand-primary);
         }
       }
     }

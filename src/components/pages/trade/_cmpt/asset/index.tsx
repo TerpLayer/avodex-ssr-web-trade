@@ -42,34 +42,6 @@ const Main: React.FC<Props> = ({ className }) => {
   return (
     <div className={cx(styles.main, className)}>
       <div className={styles.title}>{t("trade.assets")}</div>
-      <div className={styles.btnDiv}>
-        {
-          // isEtf ? (
-          //   <>
-          //     <Subscribe />
-          //     <span></span>
-          //     <Redeem />
-          //   </>
-          // ) :
-          isLever && (layout === LayoutEnum.advanced || isH5) ? (
-            <>
-              <Borrow />
-              <span></span>
-              <Repay />
-              <span></span>
-              <Transfer />
-            </>
-          ) : (
-            <>
-              <Deposit />
-              <span></span>
-              <Transfer />
-              <span></span>
-              <Buy />
-            </>
-          )
-        }
-      </div>
       <div className={styles.ul}>
         {!isLever ? (
           <>
@@ -97,6 +69,34 @@ const Main: React.FC<Props> = ({ className }) => {
             </div>
           </>
         )}
+      </div>
+      <div className={styles.btnDiv}>
+        {
+          // isEtf ? (
+          //   <>
+          //     <Subscribe />
+          //     <span></span>
+          //     <Redeem />
+          //   </>
+          // ) :
+          isLever && (layout === LayoutEnum.advanced || isH5) ? (
+            <>
+              <Borrow />
+              <span></span>
+              <Repay />
+              <span></span>
+              <Transfer />
+            </>
+          ) : (
+            <>
+              <Deposit />
+              <span></span>
+              <Transfer />
+              <span></span>
+              <Buy />
+            </>
+          )
+        }
       </div>
     </div>
   );

@@ -1,15 +1,15 @@
 .main {
-  color: var(--az-theme-text-color);
+  color: var(--az-colorv2-text-primary);
   background-color: var(--az-theme-body-color);
 }
 
 .header {
   border-top: 2px solid var(--az-theme-body-color);
-  background-color: var(--az-theme-background-color);
+  background-color: var(--az-colorv2-bg-surface);
 }
 
 .mainData {
-  background-color: var(--az-theme-background-color);
+  background-color: var(--az-colorv2-bg-surface);
   margin: 4px 0;
 
   .mainDataContent {
@@ -34,7 +34,7 @@
 }
 
 .history {
-  background-color: var(--az-theme-background-color);
+  background-color: var(--az-colorv2-bg-surface);
   height: 100vh;
   display: flex;
   flex-direction: column;

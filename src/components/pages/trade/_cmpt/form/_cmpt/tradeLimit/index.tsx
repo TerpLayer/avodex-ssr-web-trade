@@ -328,7 +328,15 @@ const Main: React.FC<Props> = ({ className, tradeSide, onSuccess }) => {
           Storage.set("orderConfirm_limit", !checked);
           todo();
         },
-        closeIcon: <SvgIcon className={"svgIcon"} src={SvgClose} />,
+        closeIcon: (
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12.1562" r="12" fill="var(--az-colorv2-bg-surface)" />
+            <path
+              d="M15.3459 16.4582C15.6099 16.7222 16.0379 16.7222 16.3019 16.4582C16.5659 16.1942 16.5659 15.7662 16.3019 15.5022L12.956 12.1563L16.302 8.81026C16.566 8.54627 16.566 8.11825 16.302 7.85426C16.038 7.59027 15.61 7.59027 15.346 7.85426L12 11.2003L8.65398 7.85424C8.38999 7.59025 7.96198 7.59025 7.69799 7.85424C7.434 8.11824 7.434 8.54625 7.69799 8.81024L11.044 12.1563L7.69809 15.5023C7.4341 15.7662 7.4341 16.1943 7.69809 16.4583C7.96208 16.7222 8.39009 16.7222 8.65408 16.4583L12 13.1123L15.3459 16.4582Z"
+              fill="var(--az-colorv2-text-secondary)"
+            />
+          </svg>
+        ),
         content: (
           <div className={styles.orderConfirm}>
             <div>

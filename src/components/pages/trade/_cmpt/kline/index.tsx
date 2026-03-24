@@ -46,7 +46,7 @@ export function getOptionTradingView(option: WithUndefined<OptionTradingViewProp
   const obj = option || Storage.get("tvOption") || {};
 
   return {
-    interval: obj.interval && TvIntervalToXtApi[obj.interval] ? obj.interval : "15",
+    interval: obj.interval && TvIntervalToXtApi[obj.interval] ? obj.interval : "60",
     chartType: [0, 1, 2, 3].includes(obj.chartType) ? obj.chartType : 1,
   };
 

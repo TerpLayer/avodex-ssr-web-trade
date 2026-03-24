@@ -1,10 +1,9 @@
 .main {
-  border-top: 1px solid var(--az-theme-text-color-008);
   padding: 20px 12px;
 }
 
 .title {
-  color: var(--az-theme-text-color);
+  color: var(--az-colorv2-text-primary);
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -21,7 +20,7 @@
 
   > button {
     flex: 1;
-    background-color: var(--az-theme-text-color-008);
+    background-color: var(--az-colorv2-bg-elevated);
     border-radius: 3px;
     height: 28px;
     font-weight: 500;
@@ -41,11 +40,11 @@
     > *:nth-child(1) {
       flex: none;
       margin-inline-start: 5px;
-      color: var(--az-theme-text-color-04);
+      color: var(--az-colorv2-text-tertiary);
     }
     > *:nth-child(2) {
       text-align: var(--az-dir-text-right);
-      color: var(--az-theme-text-color);
+      color: var(--az-colorv2-text-primary);
     }
   }
 }

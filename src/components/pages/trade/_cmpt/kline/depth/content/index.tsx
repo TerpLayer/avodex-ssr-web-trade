@@ -24,7 +24,7 @@ const Theme = {
     lineColor: "rgba(0, 0, 0, 0.4)",
   },
   dark: {
-    bgColor: "#0a0a0a",
+    bgColor: "#0C1418",
     lineColor: "rgba(255, 255, 255, 0.4)",
   },
 };

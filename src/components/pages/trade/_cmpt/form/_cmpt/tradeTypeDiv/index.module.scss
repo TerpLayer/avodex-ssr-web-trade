@@ -11,10 +11,10 @@
       //font-weight: 500;
       font-size: 14px;
       line-height: 16px;
-      color: var(--az-theme-text-color-04);
+      color: var(--az-colorv2-text-secondary);
 
       &.atv {
-        color: var(--az-color-primary);
+        color: var(--az-colorv2-text-primary);
       }
 
       + * {
@@ -40,7 +40,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: var(--az-color-primary);
+    color: var(--az-colorv2-brand-primary);
 
     + button {
       margin-inline-start: 10px;

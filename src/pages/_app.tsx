@@ -59,11 +59,10 @@ const Content = ({ theme, children }) => {
 
   React.useEffect(() => {
     const payload: AzContextState = {};
-    // const payloadTheme = theme || Cookie.get("theme") || "";
-    // if (/^(dark|light)$/.test(payloadTheme)) {
-    //   payload.theme = payloadTheme;
-    // }
-    payload.theme = "dark"; // fixed theme
+    const payloadTheme = theme || Cookie.get("theme") || "dark";
+    if (/^(dark|light)$/.test(payloadTheme)) {
+      payload.theme = payloadTheme;
+    }
     const currency = Cookie.get("currency");
     currency && (payload.currency = currency);
     appDispatch({ payload });
@@ -81,7 +80,7 @@ const Content = ({ theme, children }) => {
     //antd
 
     message.config({ top: 60 });
-    ConfigProvider.config({ theme: { primaryColor: "#EE1472" } });
+    ConfigProvider.config({ theme: { primaryColor: "#6B5FD4" } });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

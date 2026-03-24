@@ -1,14 +1,14 @@
 .main {
-  border-top: 1px solid var(--az-theme-text-color-008);
+  border-top: 1px solid var(--az-colorv2-border-disabled);
   padding: 10px 12px;
 
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
 
   //> *:nth-child(1) {
-  //  color: var(--az-theme-text-color-04);
+  //  color: var(--az-colorv2-text-secondary);
   //}
 
   button {
@@ -19,7 +19,7 @@
   &.login {
     button {
       cursor: pointer !important;
-      color: var(--az-color-primary);
+      color: var(--az-colorv2-brand-primary);
     }
   }
 }

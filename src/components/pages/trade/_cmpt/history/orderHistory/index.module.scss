@@ -12,10 +12,10 @@
 .nav {
   flex: none;
   font-weight: 400;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
 
   > * {
-    border-top: 1px solid var(--az-theme-text-color-008);
+    border-top: 1px solid var(--az-colorv2-border-disabled);
   }
 }
 

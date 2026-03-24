@@ -22,8 +22,8 @@ const UpDown: React.FC<Props> = ({
   className,
   value = "",
   decimal = 2,
-  upClolr = "var(--az-color-up)",
-  downColor = "var(--az-color-down)",
+  upClolr = "var(--az-colorv2-up)",
+  downColor = "var(--az-colorv2-down)",
   closeColor = false,
   size = 18,
 }) => {
