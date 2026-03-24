@@ -9,11 +9,11 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: var(--az-color-primary);
+    color: var(--az-colorv2-brand-primary);
 
     svg {
-      //color: var(--az-theme-text-color-06);
-      color: var(--az-theme-text-color);
+      //color: var(--az-colorv2-text-tertiary);
+      color: var(--az-colorv2-text-primary);
     }
 
     + button {

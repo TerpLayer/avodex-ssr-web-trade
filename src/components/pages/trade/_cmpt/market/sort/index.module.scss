@@ -14,7 +14,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 16px;
-      color: var(--az-theme-text-color-04);
+      color: var(--az-colorv2-text-secondary);
 
       + button {
         margin-inline-start: 5px;
@@ -47,7 +47,7 @@
     border-inline-end: 4px solid transparent;
     border-top: 0;
     border-bottom: 4px solid;
-    border-bottom-color: var(--az-theme-text-color-04);
+    border-bottom-color: var(--az-colorv2-text-tertiary);
     //transition: border-bottom-color 0.2s ease-in-out;
 
     [dir="rtl"] & {
@@ -67,7 +67,7 @@
     border-inline-end: 4px solid transparent;
     border-bottom: 0;
     border-top: 4px solid;
-    border-top-color: var(--az-theme-text-color-04);
+    border-top-color: var(--az-colorv2-text-tertiary);
     //transition: border-top-color 0.2s ease-in-out;
 
     [dir="rtl"] & {
@@ -77,10 +77,10 @@
   }
 
   &:global(.up)::before {
-    border-bottom-color: var(--az-color-primary);
+    border-bottom-color: var(--az-colorv2-system-focus);
   }
 
   &:global(.down)::after {
-    border-top-color: var(--az-color-primary);
+    border-top-color: var(--az-colorv2-system-focus);
   }
 }

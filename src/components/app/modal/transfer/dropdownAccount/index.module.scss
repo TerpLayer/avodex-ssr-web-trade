@@ -5,7 +5,7 @@
         background-color: var(--az-theme-body-color);
 
         [data-theme="light"] & {
-          background-color: var(--az-theme-background-color);
+          background-color: var(--az-colorv2-bg-surface);
         }
       }
       .ant-dropdown-menu-item {
@@ -25,7 +25,7 @@
     }
 
     > small {
-      color: var(--az-color-primary);
+      color: var(--az-colorv2-brand-primary);
       margin-inline-start: 2px;
       font-size: 10px;
     }
@@ -40,7 +40,7 @@
   font-size: 14px;
   line-height: 20px;
   padding: 10px 12px;
-  color: var(--az-theme-text-color-08);
+  color: var(--az-colorv2-text-primary);
   background-color: var(--az-theme-text-color-008);
   border-radius: 3px;
 

@@ -65,19 +65,18 @@ const Main: React.FC<Props> = ({ sortBy, onChange, isShowVolume, setIsShowVolume
         </button>
       </div>
       <div>
-        {isShowVolume ? (
-          <button className={cx("btnTxt", styles.btnFilter, getCls("volume"))} onClick={() => onClick("volume")}>
-            {t("trade.volume")}
-          </button>
-        ) : (
-          <button className={cx("btnTxt", styles.btnFilter, getCls("rate"))} onClick={() => onClick("rate")}>
-            {t("trade.change")}
-          </button>
-        )}
-        <button className={cx("btnTxt")} onClick={() => setIsShowVolume(!isShowVolume)}>
-          <AzSvg icon={"transfer"} />
+        <button className={cx("btnTxt", styles.btnFilter, getCls("volume"))} onClick={() => onClick("volume")}>
+          {t("trade.volume")}
         </button>
       </div>
+      <div>
+        <button className={cx("btnTxt", styles.btnFilter, getCls("rate"))} onClick={() => onClick("rate")}>
+          {t("trade.change")}
+        </button>
+      </div>
+      {/* <button className={cx("btnTxt")} onClick={() => setIsShowVolume(!isShowVolume)}>
+          <AzSvg icon={"transfer"} />
+        </button> */}
     </div>
   );
 };

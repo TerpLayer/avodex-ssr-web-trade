@@ -19,12 +19,12 @@
   }
 
   &:hover {
-    background-color: var(--az-theme-select-color);
+    background-color: var(--az-colorv2-bg-hover);
   }
 }
 
 .atv {
-  background-color: var(--az-theme-select-color);
+  background-color: var(--az-colorv2-bg-hover);
 }
 
 .name {
@@ -49,10 +49,10 @@
     }
     > b {
       font-weight: 400;
-      color: var(--az-theme-text-color);
+      color: var(--az-colorv2-text-primary);
     }
     > span {
-      color: var(--az-theme-text-color-04);
+      color: var(--az-colorv2-text-secondary);
     }
 
     position: absolute;
@@ -74,18 +74,18 @@
   }
 }
 .tag {
-  color: var(--az-color-primary);
+  color: var(--az-colorv2-brand-primary);
   background-color: var(--az-color-primary-bg);
   border-radius: 2px;
   padding: 0px 3px;
   //margin-top: -1px;
   margin-inline-start: 4px;
   &.etf_long {
-    color: var(--az-color-up);
+    color: var(--az-colorv2-up);
     background: rgba(23, 193, 134, 0.1);
   }
   &.etf_short {
-    color: var(--az-color-down);
+    color: var(--az-colorv2-down);
     background: rgba(253, 87, 96, 0.1);
   }
 }

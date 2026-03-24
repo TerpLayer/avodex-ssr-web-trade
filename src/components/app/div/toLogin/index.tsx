@@ -41,8 +41,8 @@ const AppDivToLogin: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ classNa
   }, []);
 
   const htmlStr = useMemo(() => {
-    const arg0 = `<a style="var(--az-color-primary)" id="connectWalletLink1">${t("wallet.connect")}</a>`;
-    const arg1 = `<a style="var(--az-color-primary)" href="${urlObj.register}">${t("trade.registerLowerCase")}</a>`;
+    const arg0 = `<a style="var(--az-colorv2-brand-primary)" id="connectWalletLink1">${t("wallet.connect")}</a>`;
+    const arg1 = `<a style="var(--az-colorv2-brand-primary)" href="${urlObj.register}">${t("trade.registerLowerCase")}</a>`;
 
     return t("trade.loginOrRegister1", [arg0]);
   }, [urlObj]);

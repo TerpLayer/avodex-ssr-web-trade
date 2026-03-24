@@ -12,7 +12,7 @@
 .market {
   width: 21.43%;
   //height: 100%;
-  background-color: var(--az-theme-background-color);
+  background-color: var(--az-colorv2-bg-surface);
 }
 
 .kline2form {
@@ -28,7 +28,7 @@
   flex: none;
   height: 492px;
   margin-bottom: 4px;
-  background-color: var(--az-theme-background-color);
+  background-color: var(--az-colorv2-bg-surface);
 }
 
 .form {
@@ -36,7 +36,7 @@
   //height: 376px;
   flex: 1;
   height: 0;
-  background-color: var(--az-theme-background-color);
+  background-color: var(--az-colorv2-bg-surface);
 }
 
 .order2trade {
@@ -52,7 +52,7 @@
   flex: none;
   height: 492px;
   margin-bottom: 4px;
-  background-color: var(--az-theme-background-color);
+  background-color: var(--az-colorv2-bg-surface);
   display: flex;
   flex-direction: column;
 }
@@ -62,7 +62,7 @@
   //height: 376px;
   flex: 1;
   height: 0;
-  background-color: var(--az-theme-background-color);
+  background-color: var(--az-colorv2-bg-surface);
   display: flex;
   flex-direction: column;
 }
@@ -70,5 +70,5 @@
 .history {
   flex: none;
   height: 412px;
-  background-color: var(--az-theme-background-color);
+  background-color: var(--az-colorv2-bg-surface);
 }

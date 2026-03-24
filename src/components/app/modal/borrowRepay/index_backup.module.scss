@@ -3,10 +3,10 @@
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
 
     &.navAtv {
-      color: var(--az-theme-text-color);
+      color: var(--az-colorv2-text-primary);
     }
 
     + button {
@@ -22,9 +22,9 @@
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 14px;
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
     .labelRight {
-      color: var(--az-theme-text-color-08);
+      color: var(--az-colorv2-text-primary);
       text-align: var(--az-dir-text-right);
     }
   }
@@ -33,7 +33,7 @@
   }
   .active {
     cursor: pointer;
-    color: var(--az-color-primary);
+    color: var(--az-colorv2-brand-primary);
   }
   .pairsDropDown {
     display: flex;
@@ -43,11 +43,11 @@
     height: 40px;
     padding: 0 10px;
     margin-bottom: 10px;
-    color: var(--az-theme-text-color-08);
+    color: var(--az-colorv2-text-primary);
     background-color: var(--az-theme-text-color-008);
     border-radius: 3px;
     &::after {
-      border-top-color: var(--az-theme-text-color-04);
+      border-top-color: var(--az-colorv2-text-secondary);
     }
     &.flexEnd {
       justify-content: flex-end;

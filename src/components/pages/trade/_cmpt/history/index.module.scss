@@ -2,7 +2,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #0a0a0a;
+  background-color: var(--az-colorv2-bg-surface);
 
   [data-breakpoint="sm"] & {
     flex: 1;
@@ -23,7 +23,7 @@
 
 .checkbox {
   font-size: 12px;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
   &:hover {
     :global {
       border-color: #9c9c9c;
@@ -34,7 +34,7 @@
   }
   :global {
     .ant-checkbox-inner {
-      background-color: #0a0a0a;
+      background-color: var(--az-colorv2-bg-surface);
       border-color: #9c9c9c !important;
     }
     .ant-checkbox {
@@ -45,13 +45,13 @@
         }
       }
       &::after {
-        border-color: #2f80ed !important;
-        background-color: #2f80ed !important;
+        border-color: var(--az-colorv2-system-info) !important;
+        background-color: var(--az-colorv2-system-info) !important;
       }
     }
     .ant-checkbox.ant-checkbox-checked .ant-checkbox-inner {
-      background-color: #2f80ed;
-      border-color: #2f80ed !important;
+      background-color: var(--az-colorv2-system-info);
+      border-color: var(--az-colorv2-system-info) !important;
       &::after {
         z-index: 10;
       }
@@ -60,7 +60,7 @@
 
   > span + span {
     padding-inline-end: 0;
-    color: #fff;
+    color: var(--az-colorv2-text-primary);
   }
 }
 
@@ -70,7 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
 }
 
 .content {
@@ -99,7 +99,7 @@
   line-height: 14px;
   padding: 9px 0;
   margin: 0 12px;
-  border-bottom: 1px solid var(--az-theme-text-color-008);
+  border-bottom: 1px solid var(--az-colorv2-border-disabled);
   word-break: break-word;
 
   > * {

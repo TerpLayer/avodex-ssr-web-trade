@@ -31,7 +31,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
     margin-inline-start: 5px;
   }
 }
@@ -61,7 +61,7 @@
   line-height: 16px;
 
   > *:nth-child(1) {
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
     flex: none;
   }
   > *:nth-child(2) {
@@ -92,13 +92,13 @@
 }
 
 .tag {
-  background-color: var(--az-theme-select-color);
+  background-color: var(--az-colorv2-bg-hover);
   font-size: 12px;
   font-weight: 500;
   height: 24px;
   padding-inline: 10px;
   border-radius: 4px;
-  color: var(--az-theme-text-color-04) !important;
+  color: var(--az-colorv2-text-secondary) !important;
 
   > svg {
     margin-inline-end: 5px;
@@ -110,9 +110,9 @@
 }
 
 .foot {
-  border-top: 1px solid var(--az-theme-text-color-008);
+  border-top: 1px solid var(--az-colorv2-border-disabled);
   padding: 12px;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
@@ -132,6 +132,6 @@
     flex: 1;
     height: 0;
     font-size: 12px;
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
   }
 }

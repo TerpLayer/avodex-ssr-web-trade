@@ -1,14 +1,15 @@
 .main {
-  color: var(--az-theme-text-color);
-  background-color: #060606;
+  color: var(--az-colorv2-text-primary);
+  background-color: var(--az-colorv2-bg-base);
   display: flex;
   flex-direction: column;
+  margin-top: 4px;
   // padding-bottom: 24px;
 }
 
 .header {
   flex: none;
   height: 55px;
-  background-color: var(--az-theme-background-color);
-  border-top: 2px solid var(--az-theme-body-color);
+  background-color: var(--az-colorv2-bg-surface);
+  // border-top: 2px solid var(--az-colorv2-border-default);
 }

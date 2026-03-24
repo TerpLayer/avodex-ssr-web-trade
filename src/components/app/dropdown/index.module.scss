@@ -2,7 +2,7 @@
   &:global(.ant-dropdown) {
     :global {
       .ant-dropdown-menu {
-        background-color: var(--az-theme-background-color);
+        background-color: var(--az-colorv2-bg-surface);
       }
       .ant-dropdown-menu-item {
         font-size: 14px;
@@ -19,8 +19,8 @@
   font-size: 14px;
   line-height: 20px;
   padding: 10px 12px;
-  color: var(--az-theme-text-color-08);
-  background-color: var(--az-theme-text-color-008);
+  color: var(--az-colorv2-text-primary);
+  background-color: var(--az-colorv2-border-disabled);
   border-radius: 3px;
 
   [data-theme="light"] & {
@@ -35,7 +35,7 @@
   overflow: hidden;
 
   [data-theme="light"] & {
-    background-color: var(--az-theme-background-color);
+    background-color: var(--az-colorv2-bg-surface);
   }
 }
 

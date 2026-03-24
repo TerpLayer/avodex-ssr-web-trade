@@ -376,36 +376,36 @@ const Main: React.FC<Props> = ({ option, action, updateTv }) => {
       tvWidget.applyOverrides(tvCfg.overrides);
     } else {
       (() => {
-        tvWidget.chart().createStudy(
-          "Moving Average",
-          false,
-          false,
-          { length: 5 },
-          {
-            "plot.color": "#0075FF",
-            "plot.linewidth": 1,
-          }
-        );
-        tvWidget.chart().createStudy(
-          "Moving Average",
-          false,
-          false,
-          { length: 15 },
-          {
-            "plot.color": "#5C00F3",
-            "plot.linewidth": 1,
-          }
-        );
-        tvWidget.chart().createStudy(
-          "Moving Average",
-          false,
-          false,
-          { length: 30 },
-          {
-            "plot.color": "#FFC453",
-            "plot.linewidth": 1,
-          }
-        );
+        // tvWidget.chart().createStudy(
+        //   "Moving Average",
+        //   false,
+        //   false,
+        //   { length: 5 },
+        //   {
+        //     "plot.color": "#0075FF",
+        //     "plot.linewidth": 1,
+        //   }
+        // );
+        // tvWidget.chart().createStudy(
+        //   "Moving Average",
+        //   false,
+        //   false,
+        //   { length: 15 },
+        //   {
+        //     "plot.color": "#5C00F3",
+        //     "plot.linewidth": 1,
+        //   }
+        // );
+        // tvWidget.chart().createStudy(
+        //   "Moving Average",
+        //   false,
+        //   false,
+        //   { length: 30 },
+        //   {
+        //     "plot.color": "#FFC453",
+        //     "plot.linewidth": 1,
+        //   }
+        // );
 
         setTimeout(() => {
           console.log("tvWidget.save");

@@ -19,16 +19,16 @@
 }
 
 .btnLogin {
-  background-color: var(--az-color-primary);
+  background-color: var(--az-colorv2-brand-primary);
   color: #fff;
 
   [data-theme="dark"] & {
-    background-color: var(--az-color-primary);
+    background-color: var(--az-colorv2-brand-primary);
     color: #fff;
   }
 }
 
 .btnRegister {
-  background-color: var(--az-color-primary);
+  background-color: var(--az-colorv2-brand-primary);
   color: rgba(0, 0, 0, 0.8);
 }
