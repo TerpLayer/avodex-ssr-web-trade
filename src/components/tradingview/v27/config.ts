@@ -17,8 +17,8 @@ const Theme = {
   },
   dark: {
     name: "Dark",
-    bgColor: "#111420",
-    lineColor: "#111420",
+    bgColor: "#131715",
+    lineColor: "rgba(255, 255, 255, 0.03)",
     textColor: "rgba(255, 255, 255, 0.4)",
     lineColor_area: "rgba(234, 236, 239, 1)",
     lineColor_area_03: "rgba(234, 236, 239, 0.3)",

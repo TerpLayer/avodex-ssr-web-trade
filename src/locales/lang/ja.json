@@ -803,7 +803,6 @@
   "acount.viewmore": "もっと見る",
   "axios.error": "ネットワークエラー",
   "cmpt.canceled1": "キャンセル",
-  "footer.rights": "© 2026, AZX TECH PTE. PTY LTD 全著作権所有。",
   "fund.Rejected": "拒否されました",
   "fund.success": "成功",
   "header.message": "メッセージ",
@@ -3113,5 +3112,10 @@
   "withdraw_domain_desc": "ウォレットアドレスをシンプルで覚えやすいドメイン名に紐づければ、長々としたアドレスを使わずに簡単にオンチェーントランザクションを実現できます。対応しているドメイン名サービスプロバイダーはこちらをクリックしてください。",
   "ws_data": "WebSocketデータ",
   "zone_01": "マザーボード",
-  "zone_02": "イノベーション地区"
+  "zone_02": "イノベーション地区",
+  "footer.rights": "AVO — AIネイティブなパーペチュアルDEX｜© 2026",
+  "footer.rights1": "エージェントエコノミーは、ここから始まる。",
+  "WalletModal.qrLoginLink": "リンク・モバイル・デバイス",
+  "WalletModal.qrLoginNote": "このQRコードやスクリーンショットを他人と共有しないでください。画面を共有していないか確認してください。",
+  "WalletModal.qrLoginWaitTitle": "財布でQRコードを承認..."
 }

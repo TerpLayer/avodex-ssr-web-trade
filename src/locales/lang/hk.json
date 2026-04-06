@@ -797,7 +797,6 @@
   "acount.viewmore": "查看更多",
   "axios.error": "網絡異常",
   "cmpt.canceled1": "取消",
-  "footer.rights": "© 2026, AZX TECH PTE. PTY LTD 版權所有",
   "fund.Rejected": "已拒絕",
   "fund.success": "成功",
   "header.message": "消息",
@@ -3068,5 +3067,13 @@
   "withdraw_domain_desc": "以一個簡單易記的網域綁定您的錢包地址,無需冗長的地址就可以實現輕鬆的鏈上交易,點擊查看已支援的域名服務商",
   "ws_data": "Websocket 數據",
   "zone_01": "主板",
-  "zone_02": "創新區"
+  "zone_02": "創新區",
+  "WalletModal.community": "熊本聪社區",
+  "header.community": "熊本聪社區",
+  "footer.rights": "AVO — AI 原生永續合約 DEX｜© 2026",
+  "footer.rights1": "Agent 經濟，從這裡開始。",
+  "WalletModal.qrLoginLink": "連結行動裝置",
+  "WalletModal.qrLoginNote": "請勿將此二維碼或其截圖分享給他人。請確保您未共享螢幕。",
+  "WalletModal.qrLoginWaitTitle": "使用錢包驗證二維碼...",
+  "header.openclaw": "OpenClaw"
 }

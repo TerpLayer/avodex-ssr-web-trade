@@ -803,7 +803,6 @@
   "acount.viewmore": "View more",
   "axios.error": "Network error",
   "cmpt.canceled1": "Canceled",
-  "footer.rights": "© 2026, AZX TECH PTE. PTY LTD All Rights Reserved.",
   "fund.Rejected": "Rejected",
   "fund.success": "Success",
   "header.message": "Message",
@@ -3113,5 +3112,13 @@
   "withdraw_domain_desc": "Bind your wallet address with a simple and easy-to-remember domain name, and you can achieve easy on-chain transactions without lengthy addresses. Click to view the supported Domain name service provider",
   "ws_data": "WebSocket Data",
   "zone_01": "motherboard",
-  "zone_02": "Innovation District"
+  "zone_02": "Innovation District",
+  "WalletModal.community": "beraBTC Community",
+  "header.community": "beraBTC Community",
+  "footer.rights": "AVO — AI-Native Perpetual DEX | © 2026",
+  "footer.rights1": "The Agentic Economy starts here.",
+  "WalletModal.qrLoginLink": "Link Mobile Device",
+  "WalletModal.qrLoginNote": "Do not share this QR code or screenshots of it with others. Make sure you are not sharing your screen.",
+  "WalletModal.qrLoginWaitTitle": "Approve QR code with wallet...",
+  "header.openclaw": "OpenClaw"
 }

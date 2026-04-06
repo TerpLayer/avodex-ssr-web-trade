@@ -803,7 +803,6 @@
   "acount.viewmore": "더 보기",
   "axios.error": "네트워크 오류",
   "cmpt.canceled1": "취소",
-  "footer.rights": "© 2026, AZX TECH PTE. PTY LTD. 모든 권리 보유.",
   "fund.Rejected": "거절됨",
   "fund.success": "성공",
   "header.message": "메시지",
@@ -3113,5 +3112,13 @@
   "withdraw_domain_desc": "지갑 주소를 간단하고 기억하기 쉬운 도메인 이름과 연결하면 긴 주소 없이도 간편하게 온체인 거래를 할 수 있습니다. 지원되는 도메인 이름 서비스 제공업체를 보려면 여기를 클릭하세요.",
   "ws_data": "웹소켓 데이터",
   "zone_01": "마더보드",
-  "zone_02": "혁신 지구"
+  "zone_02": "혁신 지구",
+  "WalletModal.community": "beraBTC Community",
+  "header.community": "beraBTC Community",
+  "footer.rights": "AVO — AI 네이티브 퍼페츄얼 DEX | © 2026",
+  "footer.rights1": "에이전트 경제는 여기서 시작됩니다.",
+  "WalletModal.qrLoginLink": "모바일 기기 연결",
+  "WalletModal.qrLoginNote": "해당 QR 코드 또는 스크린샷을 다른 사람과 공유하지 마세요. 화면 공유가 되어 있지 않은지 확인하세요.",
+  "WalletModal.qrLoginWaitTitle": "지갑에서 QR 코드를 승인 중입니다...",
+  "header.openclaw": "OpenClaw"
 }
