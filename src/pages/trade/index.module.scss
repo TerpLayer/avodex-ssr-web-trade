@@ -2,7 +2,7 @@
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #141414;
+  background-color: var(--az-colorv2-bg-base);
 
   > *:nth-child(1) {
     flex: none;

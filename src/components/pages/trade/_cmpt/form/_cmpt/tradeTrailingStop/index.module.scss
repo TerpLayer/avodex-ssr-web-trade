@@ -13,7 +13,7 @@
     white-space: nowrap;
     //font-weight: 500;
     > *:nth-child(1) {
-      color: var(--az-theme-text-color-04);
+      color: var(--az-colorv2-text-secondary);
     }
     > *:nth-child(2) {
       margin: 0 2px;
@@ -42,10 +42,10 @@
       :global {
         .ant-slider {
           .ant-slider-dot {
-            background-color: var(--az-theme-pop-background-color);
+            background-color: var(--az-colorv2-bg-surface);
           }
           .ant-slider-dot-active {
-            background-color: var(--az-color-primary);
+            background-color: var(--az-colorv2-brand-primary);
           }
         }
       }
@@ -85,17 +85,17 @@
   }
 
   &.btnSubmit_buy {
-    background-color: var(--az-color-up);
+    background-color: var(--az-colorv2-up);
 
     &:not([disabled]):hover {
-      background-color: var(--az-color-up-hover);
+      background-color: var(--az-colorv2-up-hover);
     }
   }
   &.btnSubmit_sell {
-    background-color: var(--az-color-down);
+    background-color: var(--az-colorv2-down);
 
     &:not([disabled]):hover {
-      background-color: var(--az-color-down-hover);
+      background-color: var(--az-colorv2-down-hover);
     }
   }
 
@@ -112,7 +112,7 @@
   margin-inline: 0;
 
   > *:nth-child(1) {
-    color: var(--az-theme-text-color-08);
+    color: var(--az-colorv2-text-primary);
     font-weight: 500;
     line-height: 22px;
   }
@@ -127,10 +127,10 @@
       line-height: 20px;
 
       > *:nth-child(1) {
-        color: var(--az-theme-text-color-06);
+        color: var(--az-colorv2-text-tertiary);
       }
       > *:nth-child(2) {
-        color: var(--az-theme-text-color-08);
+        color: var(--az-colorv2-text-primary);
       }
 
       + div {
@@ -140,12 +140,12 @@
   }
 
   .orderConfirmCheckbox {
-    color: var(--az-theme-text-color-06);
+    color: var(--az-colorv2-text-tertiary);
 
     [data-theme="dark"] & {
       :global {
         .ant-checkbox .ant-checkbox-inner {
-          border-color: var(--az-theme-text-color-06);
+          border-color: var(--az-colorv2-text-tertiary);
         }
       }
     }
@@ -159,7 +159,7 @@
   line-height: 14px;
 
   > *:nth-child(1) {
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
   }
   > *:nth-child(2) {
   }
@@ -182,13 +182,13 @@
   font-size: 14px;
   line-height: 20px;
   padding: 10px 12px;
-  color: var(--az-theme-text-color);
-  background-color: var(--az-theme-select-color);
+  color: var(--az-colorv2-text-primary);
+  background-color: var(--az-colorv2-bg-hover);
   border-radius: 3px;
   margin-bottom: 10px;
 
   &::after {
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
   }
 }
 
@@ -204,8 +204,8 @@
   > button {
     flex: none;
     margin-inline-start: 6px;
-    color: var(--az-theme-text-color);
-    background-color: var(--az-theme-select-color);
+    color: var(--az-colorv2-text-primary);
+    background-color: var(--az-colorv2-bg-hover);
     border-radius: 3px;
     width: 46px;
 
@@ -226,7 +226,7 @@
 
   .activePriceLab {
     font-size: 12px;
-    color: var(--az-theme-text-color);
+    color: var(--az-colorv2-text-primary);
     cursor: pointer;
     text-decoration: underline;
     text-decoration-style: dashed;

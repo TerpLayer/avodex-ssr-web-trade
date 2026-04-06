@@ -11,9 +11,9 @@
   font-size: 12px;
   text-decoration: underline !important;
   //text-decoration-style: dashed !important;
-  text-decoration-color: var(--az-theme-text-color-04) !important;
+  text-decoration-color: var(--az-colorv2-text-secondary) !important;
   text-underline-offset: 2px;
-  color: var(--az-theme-text-color-04) !important;
+  color: var(--az-colorv2-text-secondary) !important;
 }
 
 .split {
@@ -36,10 +36,10 @@
       //font-weight: 500;
       font-size: 14px;
       line-height: 16px;
-      color: var(--az-theme-text-color-04);
+      color: var(--az-colorv2-text-secondary);
 
       &.btnAtv {
-        color: var(--az-color-primary);
+        color: var(--az-colorv2-brand-primary);
       }
 
       + * {
@@ -55,7 +55,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 14px;
-      color: var(--az-color-primary);
+      color: var(--az-colorv2-brand-primary);
 
       + button {
         margin-inline-start: 10px;
@@ -72,7 +72,7 @@
 }
 
 .btnAtv {
-  color: var(--az-color-primary);
+  color: var(--az-colorv2-brand-primary);
 }
 
 .content {

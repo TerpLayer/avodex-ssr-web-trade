@@ -116,10 +116,10 @@ const Main: React.FC = () => {
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M15.7122 16.7729C16.0051 17.0658 16.48 17.0658 16.7729 16.7729C17.0658 16.48 17.0658 16.0052 16.7729 15.7123L13.0606 12L16.773 8.28768C17.0659 7.99478 17.0659 7.51991 16.773 7.22702C16.4801 6.93412 16.0052 6.93412 15.7123 7.22702L12 10.9394L8.28759 7.22699C7.9947 6.9341 7.51983 6.9341 7.22693 7.22699C6.93404 7.51989 6.93404 7.99476 7.22693 8.28765L10.9393 12L7.22704 15.7123C6.93414 16.0052 6.93414 16.4801 7.22704 16.773C7.51993 17.0658 7.9948 17.0658 8.2877 16.773L12 13.0607L15.7122 16.7729Z"
-                fill="white"
+                fill="var(--az-colorv2-text-primary)"
                 fill-opacity="0.7"
               />
-              <circle opacity="0.1" cx="12" cy="12" r="12" fill="white" />
+              <circle opacity="0.1" cx="12" cy="12" r="12" fill="var(--az-colorv2-text-primary)" />
             </svg>
           </button>
         }
@@ -141,13 +141,13 @@ const Main: React.FC = () => {
             </div> */}
 
             <div>
-              <p>{t("trade.colorStyleSetting")}</p>
+              <p style={{ color: "var(--az-colorv2-text-tertiary)" }}>{t("trade.colorStyleSetting")}</p>
               <div className={cx(styles.conOrderConfirm, styles.conColorStyleSetting)}>
                 <div>
                   <div>
                     <span>{t("trade.colorStyleRedDown")}</span>
-                    <AppSvgArrowUp style={{ color: "var(--az-color-green)" }} />
-                    <AppSvgArrowDown style={{ color: "var(--az-color-red)" }} />
+                    <AppSvgArrowUp style={{ color: "var(--az-colorv2-trade-buy)" }} />
+                    <AppSvgArrowDown style={{ color: "var(--az-colorv2-trade-sell)" }} />
                   </div>
 
                   <Radio checked={!isColorReverse} onClick={() => setColorStyle(ColorStyleEnum.normal)} />
@@ -155,8 +155,8 @@ const Main: React.FC = () => {
                 <div>
                   <div>
                     <span>{t("trade.colorStyleRedUp")}</span>
-                    <AppSvgArrowUp style={{ color: "var(--az-color-red)" }} />
-                    <AppSvgArrowDown style={{ color: "var(--az-color-green)" }} />
+                    <AppSvgArrowUp style={{ color: "var(--az-colorv2-trade-sell)" }} />
+                    <AppSvgArrowDown style={{ color: "var(--az-colorv2-trade-buy)" }} />
                   </div>
 
                   <Radio checked={isColorReverse} onClick={() => setColorStyle(ColorStyleEnum.reverse)} />

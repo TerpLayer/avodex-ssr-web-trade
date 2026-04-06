@@ -13,7 +13,7 @@
     white-space: nowrap;
     //font-weight: 500;
     > *:nth-child(1) {
-      color: var(--az-theme-text-color-04);
+      color: var(--az-colorv2-text-secondary);
     }
     > *:nth-child(2) {
       margin: 0 2px;
@@ -41,7 +41,7 @@
   height: 40px;
   margin-top: 15px;
   width: 100%;
-  color: #fff !important;
+  color: var(--az-colorv2-text-button) !important;
   //font-weight: 500;
   font-size: 14px;
   border-radius: 3px;
@@ -51,17 +51,17 @@
   }
 
   &.btnSubmit_buy {
-    background-color: var(--az-color-up);
+    background-color: var(--az-colorv2-up);
 
     &:not([disabled]):hover {
-      background-color: var(--az-color-up-hover);
+      background-color: var(--az-colorv2-up-hover);
     }
   }
   &.btnSubmit_sell {
-    background-color: var(--az-color-down);
+    background-color: var(--az-colorv2-down);
 
     &:not([disabled]):hover {
-      background-color: var(--az-color-down-hover);
+      background-color: var(--az-colorv2-down-hover);
     }
   }
 
@@ -75,7 +75,7 @@
   margin-inline: 0;
 
   > *:nth-child(1) {
-    color: var(--az-theme-text-color-08);
+    color: var(--az-colorv2-text-primary);
     font-weight: 500;
     line-height: 22px;
   }
@@ -90,10 +90,10 @@
       line-height: 20px;
 
       > *:nth-child(1) {
-        color: var(--az-theme-text-color-06);
+        color: var(--az-colorv2-text-tertiary);
       }
       > *:nth-child(2) {
-        color: var(--az-theme-text-color-08);
+        color: var(--az-colorv2-text-primary);
       }
 
       + div {
@@ -103,12 +103,12 @@
   }
 
   .orderConfirmCheckbox {
-    color: var(--az-theme-text-color-06);
+    color: var(--az-colorv2-text-tertiary);
 
     [data-theme="dark"] & {
       :global {
         .ant-checkbox .ant-checkbox-inner {
-          border-color: var(--az-theme-text-color-06);
+          border-color: var(--az-colorv2-text-tertiary);
         }
       }
     }
@@ -118,13 +118,13 @@
 .feeInfo {
   min-height: 50px;
   padding-top: 5px;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
 
   .feeInfoMain {
-    color: var(--az-theme-text-color);
+    color: var(--az-colorv2-text-primary);
   }
 }

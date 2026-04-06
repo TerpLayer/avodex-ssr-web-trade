@@ -1,6 +1,6 @@
 .main {
   > p {
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
     margin-block: 20px 10px;
     margin-inline: 0;
   }
@@ -17,17 +17,17 @@
   > div {
     line-height: 18px;
     font-weight: 500;
-    color: var(--az-theme-text-color);
+    color: var(--az-colorv2-text-primary);
   }
 
   > small {
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
   }
 }
 
 .liAtv {
   > div {
-    color: var(--az-color-primary);
+    color: var(--az-colorv2-brand-primary);
   }
 }
 
@@ -55,11 +55,11 @@
       flex: auto;
       margin-inline-start: 6px;
       text-align: var(--az-dir-text-left);
-      color: var(--az-theme-text-color-04);
+      color: var(--az-colorv2-text-secondary);
 
       > div {
         > b {
-          color: var(--az-theme-text-color);
+          color: var(--az-colorv2-text-primary);
           font-weight: 500;
         }
 
@@ -74,7 +74,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
-        color: var(--az-theme-text-color);
+        color: var(--az-colorv2-text-primary);
       }
 
       > p {
@@ -98,14 +98,14 @@
       > div {
         > div {
           > b {
-            color: var(--az-theme-text-color-04);
+            color: var(--az-colorv2-text-secondary);
           }
           > small {
             color: var(--az-theme-text-color-02);
           }
         }
         > b {
-          color: var(--az-theme-text-color-04);
+          color: var(--az-colorv2-text-secondary);
         }
         > p {
           color: var(--az-theme-text-color-02);
@@ -115,7 +115,7 @@
   }
 
   > .btnAtv {
-    box-shadow: 0 0 0 1px var(--az-color-primary);
+    box-shadow: 0 0 0 1px var(--az-colorv2-brand-primary);
   }
 }
 

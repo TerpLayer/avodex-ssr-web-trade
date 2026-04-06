@@ -11,14 +11,14 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
-    color: var(--az-theme-text-color-08);
+    color: var(--az-colorv2-text-primary);
   }
 
   > span {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: var(--az-theme-text-color-06);
+    color: var(--az-colorv2-text-tertiary);
   }
 
   > div {
@@ -37,20 +37,20 @@
       border-radius: 6px;
       font-weight: 400;
       font-size: 36px;
-      color: var(--az-theme-text-color-08);
-      background-color: var(--az-theme-select-color);
+      color: var(--az-colorv2-text-primary);
+      background-color: var(--az-colorv2-bg-hover);
     }
 
     > span {
       display: inline-block;
-      color: var(--az-theme-text-color-08);
+      color: var(--az-colorv2-text-primary);
       font-weight: 400;
       font-size: 20px;
       margin: 0 10px;
     }
 
     > *:nth-child(1) {
-      color: var(--az-color-primary);
+      color: var(--az-colorv2-brand-primary);
     }
   }
 }

@@ -1,5 +1,5 @@
 .main {
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
   //font-weight: 500;
   font-size: 12px;
 
@@ -22,7 +22,7 @@
   > *:nth-child(2) {
     display: inline-flex;
     align-items: center;
-    color: var(--az-theme-text-color);
+    color: var(--az-colorv2-text-primary);
 
     svg {
       font-size: 17px;

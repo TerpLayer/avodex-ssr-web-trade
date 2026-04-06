@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-    border-bottom: 1px solid var(--az-theme-text-color-008);
+    border-bottom: 1px solid var(--az-colorv2-border-disabled);
     padding: 5px 0;
     margin: 0 12px;
 
@@ -26,10 +26,10 @@
   .barBtn {
     padding: 1px 6px;
     border-radius: 3px;
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
   }
   .barBtnAtv {
-    color: var(--az-color-primary);
+    color: var(--az-colorv2-brand-primary);
     background-color: rgba(255, 190, 64, 0.1);
   }
 }

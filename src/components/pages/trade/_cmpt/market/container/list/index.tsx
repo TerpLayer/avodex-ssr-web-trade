@@ -160,7 +160,8 @@ const Main: React.FC<Props> = ({ className, ticker: originTicker, isShowVolume, 
         </div>
       </div>
       <AzFontScale className={cx(styles.price, priceCls)}>{indentFormat(priceLab)}</AzFontScale>
-      {isShowVolume ? <AzFontScale>{volume}</AzFontScale> : <AzFontScale className={cx(styles.rate, getUpDownCls(ticker.cr))}>{rateLab}</AzFontScale>}
+      <AzFontScale>{volume}</AzFontScale>
+      <AzFontScale className={cx(styles.rate, getUpDownCls(ticker.cr))}>{rateLab}</AzFontScale>
     </div>
   );
 };

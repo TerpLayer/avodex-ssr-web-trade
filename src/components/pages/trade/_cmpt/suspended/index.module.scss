@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--az-theme-background-color-95);
+  background-color: var(--az-colorv2-bg-surface);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: var(--az-theme-text-color-08);
+  color: var(--az-colorv2-text-primary);
 
   > img {
     width: 107px;

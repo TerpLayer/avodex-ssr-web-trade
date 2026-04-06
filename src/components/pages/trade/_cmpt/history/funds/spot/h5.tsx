@@ -51,7 +51,7 @@ const Main: React.FC<Props> = ({ items }) => {
                       <div>{doc._freeze}</div>
                     </div>
                     <div className={styles_h5.cardLi}>
-                      <div>{t("trade.totalAsset") + ` (${getCurrencyDisplayName(convertCurrency)})`}</div>
+                      <div>{t("trade.totalAsset0", [getCurrencyDisplayName(convertCurrency)])}</div>
                       <div>{doc._totalAsset}</div>
                     </div>
                   </div>

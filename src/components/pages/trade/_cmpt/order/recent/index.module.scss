@@ -34,7 +34,7 @@
   small {
     font-weight: 400;
     font-size: 12px;
-    color: var(--az-theme-text-color-06);
+    color: var(--az-colorv2-text-tertiary) !important;
     margin-inline-start: 5px;
   }
 
@@ -85,9 +85,9 @@
   margin-inline-start: 5px;
   font-size: 12px;
   font-weight: 400;
-  color: var(--az-theme-text-color-06);
+  color: var(--az-colorv2-text-tertiary);
   cursor: pointer;
   .networth_label {
-    border-bottom: 1px dashed var(--az-theme-text-color-04);
+    border-bottom: 1px dashed var(--az-colorv2-text-secondary);
   }
 }

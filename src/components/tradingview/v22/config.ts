@@ -9,7 +9,7 @@ const Color = {
 const Theme = {
   light: {
     name: "Light",
-    bgColor: "#fff",
+    bgColor: "#FFFFFF",
     lineColor: "rgba(0, 0, 0, 0.03)",
     textColor: "rgba(0, 0, 0, 0.4)",
     lineColor_area: "rgba(51, 51, 51, 1)",
@@ -17,7 +17,7 @@ const Theme = {
   },
   dark: {
     name: "Dark",
-    bgColor: "#0a0a0a",
+    bgColor: "#131715",
     lineColor: "rgba(255, 255, 255, 0.03)",
     textColor: "rgba(255, 255, 255, 0.4)",
     lineColor_area: "rgba(234, 236, 239, 1)",

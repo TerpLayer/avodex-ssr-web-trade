@@ -38,7 +38,7 @@
     height: 40px;
     display: flex;
     background: #f8f8f8;
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
@@ -48,7 +48,7 @@
     }
 
     &.conThemeAtv {
-      color: var(--az-color-primary);
+      color: var(--az-colorv2-brand-primary);
       background: rgba(255, 190, 64, 0.2);
     }
 
@@ -110,21 +110,21 @@
       font-weight: 500;
       font-size: 12px;
       line-height: 14px;
-      color: var(--az-theme-text-color-04);
+      color: var(--az-colorv2-text-secondary);
     }
 
     &:hover {
       > p {
-        color: var(--az-theme-text-color);
+        color: var(--az-colorv2-text-primary);
       }
     }
 
     &.conThemeAtv {
       > button {
-        border-color: var(--az-color-primary);
+        border-color: var(--az-colorv2-brand-primary);
       }
       > p {
-        color: var(--az-theme-text-color);
+        color: var(--az-colorv2-text-primary);
       }
     }
   }
@@ -138,11 +138,11 @@
         left: 50%;
       }
       > *:nth-child(1) {
-        background: var(--az-color-up);
+        background: var(--az-colorv2-up);
         margin-inline-start: -12px;
       }
       > *:nth-child(2) {
-        background: var(--az-color-down);
+        background: var(--az-colorv2-down);
         margin-inline-start: 1px;
       }
     }
@@ -156,14 +156,14 @@
         top: 5px;
       }
       > *:nth-child(1) {
-        background: var(--az-color-up);
+        background: var(--az-colorv2-up);
         right: 12px;
       }
       > *:nth-child(2) {
-        background: var(--az-color-down);
+        background: var(--az-colorv2-down);
       }
       > *:nth-child(3) {
-        background: var(--az-color-up);
+        background: var(--az-colorv2-up);
         top: initial;
         bottom: 7px;
         width: 16px;
@@ -179,11 +179,11 @@
         right: 3px;
       }
       > *:nth-child(1) {
-        background: var(--az-color-up);
+        background: var(--az-colorv2-up);
         right: 16px;
       }
       > *:nth-child(2) {
-        background: var(--az-color-down);
+        background: var(--az-colorv2-down);
       }
     }
   }
@@ -198,14 +198,15 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    color: #666;
-
-    [data-theme="dark"] & {
-      color: rgba(255, 255, 255, 0.4);
-    }
+    color: var(--az-colorv2-text-primary);
 
     + * {
       margin-top: 10px;
+    }
+  }
+  :global {
+    .ant-switch-checked {
+      background-color: var(--az-colorv2-system-focus) !important;
     }
   }
 }
@@ -271,7 +272,7 @@
   cursor: pointer;
   text-decoration: underline dashed;
   text-underline-offset: 4px;
-  text-decoration-color: var(--az-theme-text-color-04);
+  text-decoration-color: var(--az-colorv2-text-secondary);
 }
 
 .tipCon {

@@ -9,7 +9,7 @@
   padding-block: 20px 34px;
   padding-inline: 12px;
 
-  background-color: var(--az-theme-background-color);
+  background-color: var(--az-colorv2-bg-surface);
   box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.08);
 
   [data-theme="dark"] & {
@@ -25,10 +25,10 @@
     border-radius: 3px;
 
     &.triggerBtnBuy {
-      background-color: var(--az-color-up);
+      background-color: var(--az-colorv2-up);
     }
     &.triggerBtnSell {
-      background-color: var(--az-color-down);
+      background-color: var(--az-colorv2-down);
     }
 
     + * {
@@ -81,7 +81,7 @@
     flex: 1;
     width: 50%;
     height: 33px;
-    color: var(--az-theme-text-color-06);
+    color: var(--az-colorv2-text-tertiary);
     background-color: var(--az-theme-text-color-008);
     font-weight: 500;
     font-size: 14px;
@@ -95,11 +95,11 @@
 
     &.navBtns_buy {
       color: #fff;
-      background-color: var(--az-color-up);
+      background-color: var(--az-colorv2-up);
     }
     &.navBtns_sell {
       color: #fff;
-      background-color: var(--az-color-down);
+      background-color: var(--az-colorv2-down);
     }
   }
 }
@@ -110,7 +110,7 @@
     padding: 0 10px;
     border-radius: 2px;
     font-size: 12px;
-    color: var(--az-color-primary);
+    color: var(--az-colorv2-brand-primary);
     background-color: var(--az-color-primary-bg);
 
     + * {
@@ -124,9 +124,9 @@
   font-size: 12px;
   text-decoration: underline !important;
   //text-decoration-style: dashed !important;
-  text-decoration-color: var(--az-theme-text-color-04) !important;
+  text-decoration-color: var(--az-colorv2-text-secondary) !important;
   text-underline-offset: 2px;
-  color: var(--az-theme-text-color-04) !important;
+  color: var(--az-colorv2-text-secondary) !important;
 }
 
 .links {

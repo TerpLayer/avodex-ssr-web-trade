@@ -16,7 +16,7 @@
   }
   > *:nth-child(2) {
     flex: none;
-    color: var(--az-color-primary);
+    color: var(--az-colorv2-brand-primary);
     font-size: 13px;
     margin-inline-start: 12px;
   }
@@ -28,10 +28,10 @@
   width: 100%;
   top: 54px;
   height: calc(100% - 54px);
-  background-color: var(--az-theme-pop-background-color);
+  background-color: var(--az-colorv2-bg-surface);
 
   [data-layout="classic"] & {
-    background-color: var(--az-theme-background-color);
+    background-color: var(--az-colorv2-bg-surface);
   }
 }
 

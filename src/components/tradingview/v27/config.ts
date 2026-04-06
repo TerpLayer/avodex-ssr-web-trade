@@ -3,13 +3,13 @@ import moment from "moment";
 const Color = {
   primary: "#EE1472",
   transparent: "transparent",
-  green: "#27AE60",
-  red: "#FF453A",
+  green: "#2E9B74",
+  red: "#C35A5A",
 };
 const Theme = {
   light: {
     name: "Light",
-    bgColor: "#fff",
+    bgColor: "#FFFFFF",
     lineColor: "rgba(0, 0, 0, 0.03)",
     textColor: "rgba(0, 0, 0, 0.4)",
     lineColor_area: "rgba(51, 51, 51, 1)",
@@ -17,7 +17,7 @@ const Theme = {
   },
   dark: {
     name: "Dark",
-    bgColor: "#0a0a0a",
+    bgColor: "#131715",
     lineColor: "rgba(255, 255, 255, 0.03)",
     textColor: "rgba(255, 255, 255, 0.4)",
     lineColor_area: "rgba(234, 236, 239, 1)",
@@ -121,6 +121,7 @@ const config = (arg: Props) => {
       "display_market_status", //关闭开市状态
       "popup_hints", //提示信息
       "legend_inplace_edit",
+      "create_volume_indicator_by_default",
     ],
     enabled_features: [
       "adaptive_logo", //小屏幕上隐藏 'charts byTradingView' 文本
@@ -129,7 +130,7 @@ const config = (arg: Props) => {
       // "disable_resolution_rebuild", //显示的时间与得到的数据时间一致
       "hide_last_na_study_output", //隐藏最后一次指标输出,隐藏指标后面的 n/a
       "same_data_requery", //允许您使用相同的商品调用 setSymbol 来刷新数据
-      // "hide_left_toolbar_by_default", //第一次打开图表时隐藏左工具栏
+      "hide_left_toolbar_by_default", //第一次打开图表时隐藏左工具栏
     ],
   };
 };

@@ -44,11 +44,11 @@
     font-style: normal;
     font-weight: 400;
     color: #666666;
-    background: var(--BG-Input-box-Bg, #f7f7f7);
+    background: var(--az-colorv2-bg-surface);
 
     > *:nth-child(2) {
       margin-inline-start: 3px;
-      color: var(--az-color-primary);
+      color: var(--az-colorv2-brand-primary);
     }
 
     [data-theme="dark"] & {
