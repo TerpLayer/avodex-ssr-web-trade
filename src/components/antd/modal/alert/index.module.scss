@@ -19,7 +19,7 @@
   }
 
   .body {
-    color: var(--az-theme-text-color);
+    color: var(--az-colorv2-text-primary);
   }
   .title {
     font-style: normal;
@@ -29,7 +29,7 @@
     margin: 0 -20px;
     padding: 0 20px;
     padding-bottom: 16px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--az-colorv2-border-default);
 
     + .content {
       margin-top: 20px;

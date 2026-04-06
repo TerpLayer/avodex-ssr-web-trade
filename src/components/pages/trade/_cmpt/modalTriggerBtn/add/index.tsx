@@ -42,12 +42,6 @@ const Deposit: React.FC<Props> = ({ className, currency }) => {
       return;
     }
 
-    if (!isLogin || walletStatus === "disconnected") {
-      message.warning(t("WalletModal.loginRequired"), 3);
-      appDispatch({ payload: { showWalletModal: true } });
-      return;
-    }
-
     const modal = ModalAlert({
       className: styles.modal,
       title: t("trade.addAvailableBalance"),
@@ -55,34 +49,35 @@ const Deposit: React.FC<Props> = ({ className, currency }) => {
       footer: <></>,
       closable: true,
       closeIcon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12.1562" r="12" fill="var(--az-colorv2-bg-surface)" />
           <path
-            d="M15.3459 16.302C15.6099 16.566 16.0379 16.566 16.3019 16.302C16.5659 16.038 16.5659 15.61 16.3019 15.346L12.956 12L16.302 8.65401C16.566 8.39002 16.566 7.962 16.302 7.69801C16.038 7.43402 15.61 7.43402 15.346 7.69801L12 11.044L8.65398 7.69799C8.38999 7.434 7.96198 7.434 7.69799 7.69799C7.434 7.96199 7.434 8.39 7.69799 8.65399L11.044 12L7.69809 15.346C7.4341 15.61 7.4341 16.038 7.69809 16.302C7.96208 16.566 8.39009 16.566 8.65408 16.302L12 12.956L15.3459 16.302Z"
-            fill="white"
-            fill-opacity="0.7"
+            d="M15.3459 16.4582C15.6099 16.7222 16.0379 16.7222 16.3019 16.4582C16.5659 16.1942 16.5659 15.7662 16.3019 15.5022L12.956 12.1563L16.302 8.81026C16.566 8.54627 16.566 8.11825 16.302 7.85426C16.038 7.59027 15.61 7.59027 15.346 7.85426L12 11.2003L8.65398 7.85424C8.38999 7.59025 7.96198 7.59025 7.69799 7.85424C7.434 8.11824 7.434 8.54625 7.69799 8.81024L11.044 12.1563L7.69809 15.5023C7.4341 15.7662 7.4341 16.1943 7.69809 16.4583C7.96208 16.7222 8.39009 16.7222 8.65408 16.4583L12 13.1123L15.3459 16.4582Z"
+            fill="var(--az-colorv2-text-secondary)"
           />
-          <circle opacity="0.1" cx="12" cy="12" r="12" fill="white" />
         </svg>
       ),
       content: (
         <div className={styles.modalContent}>
-          <Transfer currency={currency} onClick={() => modal.destroy()}>
-            <div>
-              <IconTransfer />
-            </div>
-            <div>
-              <p>{t("trade.transfer")}</p>
-              <div>{t("trade.transferTips")}</div>
-            </div>
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M1.99965 13.0001L1.99951 11.0002H18.1714L14.2217 7.05044L15.6359 5.63623L21.9999 12.0002L15.6359 18.3642L14.2217 16.9499L18.1715 13.0002L1.99965 13.0001Z"
-                  fill="#2F80ED"
-                />
-              </svg>
-            </div>
-          </Transfer>
+          <AzContext.Provider value={azContext}>
+            <Transfer currency={currency} onClick={() => modal.destroy()}>
+              <div>
+                <IconTransfer />
+              </div>
+              <div>
+                <p>{t("trade.transfer")}</p>
+                <div>{t("trade.transferTips")}</div>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M1.99965 13.0001L1.99951 11.0002H18.1714L14.2217 7.05044L15.6359 5.63623L21.9999 12.0002L15.6359 18.3642L14.2217 16.9499L18.1715 13.0002L1.99965 13.0001Z"
+                    fill="var(--az-colorv2-brand-primary)"
+                  />
+                </svg>
+              </div>
+            </Transfer>
+          </AzContext.Provider>
           <a
             onClick={() => {
               modal.destroy();
@@ -107,7 +102,7 @@ const Deposit: React.FC<Props> = ({ className, currency }) => {
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
                   d="M1.99965 13.0001L1.99951 11.0002H18.1714L14.2217 7.05044L15.6359 5.63623L21.9999 12.0002L15.6359 18.3642L14.2217 16.9499L18.1715 13.0002L1.99965 13.0001Z"
-                  fill="#2F80ED"
+                  fill="var(--az-colorv2-brand-primary)"
                 />
               </svg>
             </div>
@@ -129,8 +124,19 @@ const Deposit: React.FC<Props> = ({ className, currency }) => {
     });
   }, [azContext, isLogin, currency, currencyObj]);
 
+  const handleClick2 = () => {
+    (window as any).appDispatch({
+      payload: {
+        showDepositAndWithDrawModal: true,
+        currentActionType: "deposit",
+        showAccountCard: false,
+        fromPage: "SPOT",
+      },
+    });
+  };
+
   return (
-    <button className={cx("btnTxt", className)} onClick={handleClick}>
+    <button className={cx("btnTxt", className)} onClick={handleClick2}>
       <AzSvg icon={"add"} />
     </button>
   );

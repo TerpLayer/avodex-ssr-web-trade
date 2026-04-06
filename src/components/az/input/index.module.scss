@@ -8,10 +8,10 @@
   font-weight: 500;
   font-size: 14px;
   background-color: transparent;
-  color: var(--az-theme-text-color);
+  color: var(--az-colorv2-text-primary);
 
   &::placeholder {
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
     font-weight: 500;
     font-size: 14px;
   }

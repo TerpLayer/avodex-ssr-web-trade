@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--az-theme-text-color-008);
+  border-bottom: 1px solid var(--az-colorv2-border-disabled);
   padding: 0 12px;
 
   > *:nth-child(1) {
@@ -21,16 +21,16 @@
   border-bottom: 2px solid transparent;
   //font-weight: 500;
   font-size: 14px;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
 
   + button {
     margin-inline-start: 20px;
   }
 
   &.atv {
-    color: var(--az-theme-text-color);
+    color: var(--az-colorv2-text-primary);
     &:not(.only) {
-      border-color: var(--az-theme-text-color);
+      border-color: var(--az-colorv2-text-primary);
     }
   }
   &.only {

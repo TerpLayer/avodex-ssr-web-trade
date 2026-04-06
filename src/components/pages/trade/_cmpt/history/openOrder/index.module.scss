@@ -12,7 +12,7 @@
 .nav {
   flex: none;
   font-weight: 400;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
 }
 
 .ul {
@@ -29,7 +29,7 @@
 }
 
 .atv {
-  color: var(--az-color-primary);
+  color: var(--az-colorv2-brand-primary);
 }
 
 .noData {
@@ -50,7 +50,7 @@
 
   > svg {
     font-size: 72px;
-    color: var(--az-color-primary);
+    color: var(--az-colorv2-brand-primary);
     margin-bottom: 25px;
   }
 }

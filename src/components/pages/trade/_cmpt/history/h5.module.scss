@@ -10,9 +10,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
   font-size: 12px;
-  border-bottom: 1px solid var(--az-theme-text-color-008);
+  border-bottom: 1px solid var(--az-colorv2-border-disabled);
 
   .opts {
     display: flex;
@@ -26,7 +26,7 @@
 
 .checkbox {
   font-size: 12px;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
 
   > span + span {
     padding-inline-end: 0;
@@ -34,7 +34,7 @@
 }
 
 .atv {
-  color: var(--az-color-primary);
+  color: var(--az-colorv2-brand-primary);
 }
 
 .content {
@@ -50,8 +50,8 @@
   line-height: 14px;
   font-weight: 400;
   padding: 12px 0;
-  color: var(--az-theme-text-color);
-  border-bottom: 1px solid var(--az-theme-text-color-008);
+  color: var(--az-colorv2-text-primary);
+  border-bottom: 1px solid var(--az-colorv2-border-disabled);
 
   .cardNav {
     display: flex;
@@ -82,7 +82,7 @@
       justify-content: space-between;
 
       > *:nth-child(1) {
-        color: var(--az-theme-text-color-04);
+        color: var(--az-colorv2-text-secondary);
         margin-inline-end: 10px;
         flex: none;
         display: flex;
@@ -93,7 +93,7 @@
         word-break: break-all;
 
         small {
-          color: var(--az-theme-text-color-04);
+          color: var(--az-colorv2-text-secondary);
         }
       }
 
@@ -120,7 +120,7 @@
 .dropdown {
   > p {
     margin: 0;
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
@@ -135,7 +135,7 @@
     font-size: 14px;
     line-height: 20px;
     padding: 10px 12px;
-    color: var(--az-theme-text-color-08);
+    color: var(--az-colorv2-text-primary);
     background-color: var(--az-theme-text-color-008);
     border-radius: 3px;
 

@@ -13,7 +13,7 @@
   h1 {
     font-weight: 500;
     font-size: 20px;
-    color: var(--az-theme-text-color);
+    color: var(--az-colorv2-text-primary);
     line-height: 1.2;
   }
 
@@ -31,7 +31,7 @@
       border-inline-end: 4px solid transparent;
       border-bottom: 0;
       border-top: 4px solid;
-      border-top-color: var(--az-theme-text-color);
+      border-top-color: var(--az-colorv2-text-primary);
       //transition: border-top-color 0.2s;
     }
 
@@ -58,7 +58,7 @@
       border-inline-end: 4px solid transparent;
       border-bottom: 0;
       border-top: 4px solid;
-      border-top-color: var(--az-theme-text-color);
+      border-top-color: var(--az-colorv2-text-primary);
       //transition: border-top-color 0.2s;
     }
 
@@ -79,7 +79,7 @@
 }
 
 .tag {
-  color: var(--az-color-primary);
+  color: var(--az-colorv2-brand-primary);
   background: rgba(255, 190, 64, 0.1);
   border-radius: 2px;
   font-weight: 500;
@@ -89,11 +89,11 @@
   padding-inline: 6px;
   margin-inline-start: 5px;
   &.etf_long {
-    color: var(--az-color-up);
+    color: var(--az-colorv2-up);
     background: rgba(23, 193, 134, 0.1);
   }
   &.etf_short {
-    color: var(--az-color-down);
+    color: var(--az-colorv2-down);
     background: rgba(253, 87, 96, 0.1);
   }
 }
@@ -109,16 +109,16 @@
   display: inline-flex;
   align-items: center;
   font-size: 12px;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
   text-decoration: underline;
-  text-decoration-color: var(--az-theme-text-color-04) !important;
+  text-decoration-color: var(--az-colorv2-text-secondary) !important;
   text-underline-offset: 2px;
 
   > h2 {
     margin-inline-start: 4px;
     font-weight: 500;
     line-height: 1;
-    color: var(--az-theme-text-color-06);
+    color: var(--az-colorv2-text-tertiary);
     font-size: 12px;
   }
 }
@@ -131,9 +131,9 @@
   //top: 115px;
   top: 94px;
   z-index: 999;
-  width: 335px;
+  width: 600px;
   height: calc(100vh - 94px);
-  background-color: var(--az-theme-pop-background-color);
+  background-color: var(--az-colorv2-bg-surface);
   box-shadow: var(--az-theme-pop-box-shadow);
   transition: all 0.2s;
   opacity: 0;
@@ -175,8 +175,8 @@
   }
 }
 
-.search {
-  [data-theme="dark"] & {
-    background-color: #242427;
-  }
-}
+// .search {
+//   [data-theme="dark"] & {
+//     background-color: #242427;
+//   }
+// }

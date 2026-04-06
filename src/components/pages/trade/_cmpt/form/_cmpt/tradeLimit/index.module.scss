@@ -13,10 +13,11 @@
     white-space: nowrap;
     //font-weight: 500;
     > *:nth-child(1) {
-      color: var(--az-theme-text-color-04);
+      color: var(--az-colorv2-text-tertiary);
     }
     > *:nth-child(2) {
       margin: 0 2px;
+      color: var(--az-colorv2-text-primary);
     }
   }
   > *:nth-child(2) {
@@ -41,10 +42,10 @@
       :global {
         .ant-slider {
           .ant-slider-dot {
-            background-color: var(--az-theme-pop-background-color);
+            background-color: var(--az-colorv2-bg-surface);
           }
           .ant-slider-dot-active {
-            background-color: var(--az-color-primary);
+            background-color: var(--az-colorv2-brand-primary);
           }
         }
       }
@@ -56,7 +57,7 @@
   height: 40px;
   margin-top: 15px;
   width: 100%;
-  color: #fff !important;
+  color: var(--az-colorv2-text-button) !important;
   //font-weight: 500;
   font-size: 14px;
   border-radius: 3px;
@@ -66,14 +67,14 @@
   }
 
   &.btnSubmit_buy {
-    background-color: var(--az-color-up);
+    background-color: var(--az-colorv2-up);
 
     &:not([disabled]):hover {
-      // background-color: var(--az-color-up-hover);
+      // background-color: var(--az-colorv2-up-hover);
     }
   }
   &.btnSubmit_sell {
-    background-color: var(--az-color-down);
+    background-color: var(--az-colorv2-down);
 
     &:not([disabled]):hover {
       // background-color: var(--az-color-down-hover);
@@ -93,7 +94,7 @@
   margin-inline: 0;
 
   > *:nth-child(1) {
-    color: var(--az-theme-text-color-08);
+    color: var(--az-colorv2-text-primary);
     font-weight: 500;
     line-height: 22px;
   }
@@ -107,10 +108,10 @@
       line-height: 20px;
 
       > *:nth-child(1) {
-        color: var(--az-theme-text-color-06);
+        color: var(--az-colorv2-text-tertiary);
       }
       > *:nth-child(2) {
-        color: var(--az-theme-text-color-08);
+        color: var(--az-colorv2-text-primary);
       }
 
       + div {
@@ -120,12 +121,12 @@
   }
 
   .orderConfirmCheckbox {
-    color: var(--az-theme-text-color-06);
+    color: var(--az-colorv2-text-tertiary);
 
     [data-theme="dark"] & {
       :global {
         .ant-checkbox .ant-checkbox-inner {
-          border-color: var(--az-theme-text-color-06);
+          border-color: var(--az-colorv2-text-tertiary);
         }
       }
     }
@@ -140,12 +141,12 @@
   }
 
   .order5TipsCheckbox {
-    color: var(--az-theme-text-color-06);
+    color: var(--az-colorv2-text-tertiary);
 
     [data-theme="dark"] & {
       :global {
         .ant-checkbox .ant-checkbox-inner {
-          border-color: var(--az-theme-text-color-06);
+          border-color: var(--az-colorv2-text-tertiary);
         }
       }
     }
@@ -160,7 +161,7 @@
   margin-top: 10px;
 
   > *:nth-child(1) {
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-tertiary);
   }
   > *:nth-child(2) {
   }

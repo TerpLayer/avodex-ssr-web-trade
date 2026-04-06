@@ -1,11 +1,11 @@
 .main {
   font-size: 12px;
   padding: 6px 12px;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
   font-weight: 400;
 
   > button {
     font-weight: 400 !important;
-    color: #2f80ed;
+    color: var(--az-colorv2-system-info);
   }
 }

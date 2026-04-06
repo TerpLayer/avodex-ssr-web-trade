@@ -2,26 +2,26 @@
   height: 40px;
   display: flex;
   align-items: center;
-  background-color: var(--az-theme-select-color);
-  border-radius: 3px;
+  background-color: var(--az-colorv2-bg-elevated);
+  border-radius: 4px;
 
   &:hover:not([aria-disabled="true"]) {
-    box-shadow: 0 0 0 1px var(--az-color-primary);
+    box-shadow: 0 0 0 1px var(--az-colorv2-input-border-hover);
   }
 
   &[aria-disabled="true"] {
     pointer-events: none;
-    background-color: var(--az-theme-text-color-008);
+    background-color: var(--az-colorv2-bg-elevated);
   }
 }
 
 .atv {
-  box-shadow: 0 0 0 1px var(--az-color-primary);
+  box-shadow: 0 0 0 1px var(--az-colorv2-input-border-hover);
 }
 .err {
-  box-shadow: 0 0 0 1px var(--az-color-red);
+  box-shadow: 0 0 0 1px var(--az-colorv2-input-border-error);
   &:hover:not([aria-disabled="true"]) {
-    box-shadow: 0 0 0 1px var(--az-color-red);
+    box-shadow: 0 0 0 1px var(--az-colorv2-input-border-error);
   }
 }
 
@@ -45,7 +45,7 @@
 .prefix {
   flex: none;
   padding-inline-end: 8px;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
 }
 
 .suffix {
@@ -55,7 +55,7 @@
 
 .btns {
   flex: none;
-  border-inline-start: 1px solid var(--az-theme-text-color-008);
+  border-inline-start: 1px solid var(--az-colorv2-bg-elevated);
   display: flex;
   flex-direction: column;
   width: 28px;
@@ -72,7 +72,7 @@
     &.btnUp {
       > span {
         border-top: 0;
-        border-bottom: 4px solid var(--az-theme-text-color-04);
+        border-bottom: 4px solid var(--az-colorv2-text-secondary);
       }
 
       &:not([disabled]) {
@@ -80,14 +80,14 @@
         &:focus,
         &:active {
           > span {
-            border-bottom: 4px solid var(--az-color-primary);
+            border-bottom: 4px solid var(--az-colorv2-text-primary);
           }
         }
       }
     }
     &.btnDown {
       > span {
-        border-top: 4px solid var(--az-theme-text-color-04);
+        border-top: 4px solid var(--az-colorv2-text-secondary);
         border-bottom: 0;
       }
 
@@ -96,7 +96,7 @@
         &:focus,
         &:active {
           > span {
-            border-top: 4px solid var(--az-color-primary);
+            border-top: 4px solid var(--az-colorv2-text-primary);
           }
         }
       }
@@ -105,6 +105,6 @@
 
   > span {
     height: 1px;
-    background-color: var(--az-theme-text-color-008);
+    background-color: var(--az-colorv2-bg-elevated);
   }
 }

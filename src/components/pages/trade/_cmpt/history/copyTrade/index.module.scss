@@ -92,10 +92,10 @@
   .barBtn {
     padding: 1px 6px;
     border-radius: 3px;
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
   }
   .barBtnAtv {
-    color: var(--az-color-primary);
+    color: var(--az-colorv2-brand-primary);
     background-color: rgba(255, 190, 64, 0.1);
   }
 }
@@ -103,15 +103,15 @@
 .nav {
   flex: none;
   font-weight: 400;
-  color: var(--az-theme-text-color-04);
+  color: var(--az-colorv2-text-secondary);
 
   > * {
-    border-top: 1px solid var(--az-theme-text-color-008);
+    border-top: 1px solid var(--az-colorv2-border-disabled);
   }
 }
 
 .atv {
-  color: var(--az-color-primary);
+  color: var(--az-colorv2-brand-primary);
 }
 
 .noData {
@@ -121,7 +121,7 @@
 .li_price {
   > p {
     font-size: 10px;
-    color: var(--az-theme-text-color-04);
+    color: var(--az-colorv2-text-secondary);
   }
 }
 
@@ -159,10 +159,10 @@
       line-height: 20px;
 
       > *:nth-child(1) {
-        color: var(--az-theme-text-color-06);
+        color: var(--az-colorv2-text-tertiary);
       }
       > *:nth-child(2) {
-        //color: var(--az-theme-text-color-08);
+        //color: var(--az-colorv2-text-primary);
       }
 
       + div {

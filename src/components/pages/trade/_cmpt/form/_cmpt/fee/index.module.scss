@@ -23,7 +23,7 @@
   align-items: center;
   height: 24px;
   line-height: 1;
-  //color: var(--az-theme-text-color);
+  //color: var(--az-colorv2-text-primary);
 }
 
 .link {
@@ -51,16 +51,16 @@
 
 .splitLine {
   margin: 10px 0;
-  border-bottom: 1px solid var(--az-theme-text-color-008);
+  border-bottom: 1px solid var(--az-colorv2-border-disabled);
 }
 
 .txtMain {
   font-weight: 500;
-  color: var(--az-theme-text-color) !important;
+  color: var(--az-colorv2-text-primary) !important;
 }
 
 .vip {
-  color: var(--az-color-primary);
+  color: var(--az-colorv2-brand-primary);
   margin-inline-start: 10px;
 }
 
@@ -70,18 +70,18 @@
     justify-content: space-between;
 
     > *:nth-child(1) {
-      color: var(--az-theme-text-color-04);
+      color: var(--az-colorv2-text-secondary);
       margin-inline-end: 10px;
       flex: none;
     }
 
     > *:nth-child(2) {
-      color: var(--az-theme-text-color);
+      color: var(--az-colorv2-text-primary);
       text-align: var(--az-dir-text-right);
       word-break: break-all;
 
       del {
-        color: var(--az-theme-text-color-04);
+        color: var(--az-colorv2-text-secondary);
       }
     }
 
@@ -105,7 +105,7 @@
 
   > svg {
     font-size: 72px;
-    color: var(--az-color-primary);
+    color: var(--az-colorv2-brand-primary);
     margin-bottom: 25px;
   }
 }

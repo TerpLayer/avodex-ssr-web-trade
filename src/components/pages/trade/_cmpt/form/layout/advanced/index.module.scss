@@ -8,30 +8,32 @@
 
 .navBtns {
   display: flex;
+  background-color: var(--az-colorv2-bg-elevated);
 
   > * {
     flex: 1;
     width: 50%;
     height: 33px;
-    color: var(--az-theme-text-color-06);
-    background-color: var(--az-theme-text-color-008);
+    color: var(--az-colorv2-text-secondary);
+    // background-color: var(--az-theme-text-color-008);
     font-weight: 500;
     font-size: 14px;
+    border-radius: 4px;
 
     &:nth-child(1) {
-      border-radius: 3px 0 0 3px;
+      border-radius: 4px;
     }
     &:nth-child(2) {
-      border-radius: 0 3px 3px 0;
+      border-radius: 4px;
     }
 
     &.navBtns_buy {
-      color: #fff;
-      background-color: var(--az-color-up);
+      color: var(--az-colorv2-text-button);
+      background-color: var(--az-colorv2-trade-buy);
     }
     &.navBtns_sell {
-      color: #fff;
-      background-color: var(--az-color-down);
+      color: var(--az-colorv2-text-button);
+      background-color: var(--az-colorv2-trade-sell);
     }
   }
 }
@@ -47,9 +49,9 @@
   font-size: 12px;
   text-decoration: underline !important;
   //text-decoration-style: dashed !important;
-  text-decoration-color: var(--az-theme-text-color-04) !important;
+  text-decoration-color: var(--az-colorv2-text-secondary) !important;
   text-underline-offset: 2px;
-  color: var(--az-theme-text-color-04) !important;
+  color: var(--az-colorv2-text-secondary) !important;
 }
 
 .links {

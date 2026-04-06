@@ -12,7 +12,7 @@
   font-weight: 400;
   line-height: 176%;
   white-space: pre-wrap;
-  color: var(--az-theme-text-color-06);
+  color: var(--az-colorv2-text-tertiary);
 
   background: #f7f7f7;
   [data-theme="dark"] & {
@@ -25,12 +25,12 @@
   margin-bottom: -5px;
 
   .checkbox {
-    color: var(--az-theme-text-color-06);
+    color: var(--az-colorv2-text-tertiary);
 
     [data-theme="dark"] & {
       :global {
         .ant-checkbox .ant-checkbox-inner {
-          border-color: var(--az-theme-text-color-06);
+          border-color: var(--az-colorv2-text-tertiary);
         }
       }
     }

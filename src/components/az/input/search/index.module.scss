@@ -1,21 +1,24 @@
 .main {
   display: flex;
   align-items: center;
-  border-radius: 3px;
+  border-radius: 4px;
   //background-color: #f2f3f5;
-  background-color: var(--az-theme-select-color);
+  background-color: var(--az-colorv2-bg-elevated);
   //background-color: var(--az-theme-text-color-008);
   height: 30px;
   font-size: 14px;
+  &:hover {
+    box-shadow: 0 0 0 1px var(--az-colorv2-input-border-hover);
+  }
 
   > svg {
     margin-block: 0;
     margin-inline: 10px 8px;
-    color: var(--az-theme-text-color-02);
+    color: var(--az-colorv2-text-secondary);
   }
 
   > button {
-    color: var(--az-theme-text-color-02);
+    color: var(--az-colorv2-text-secondary);
     padding: 0 8px;
   }
 
@@ -30,7 +33,7 @@
   font-size: 13px;
 
   &::placeholder {
-    color: var(--az-theme-text-color-02);
+    color: var(--az-colorv2-text-secondary);
     font-size: 13px;
     transform: translate3d(0, 0.5px, 0);
     font-weight: normal;

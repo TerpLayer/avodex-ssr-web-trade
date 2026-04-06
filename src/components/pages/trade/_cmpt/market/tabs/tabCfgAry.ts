@@ -48,9 +48,9 @@ const tabCfgAry = [
   //   group: "ALTS",
   // },
   //zone
-  {
-    key: "zone",
-  },
+  // {
+  //   key: "zone",
+  // },
 ];
 
 export default tabCfgAry;
