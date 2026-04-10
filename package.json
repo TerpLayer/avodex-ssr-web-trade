@@ -7,7 +7,7 @@
     "dev": "cross-env NEXT_PUBLIC_LOCAL=1 NODE_ENV=development next dev -p 8084",
     "qa": "cross-env NEXT_PUBLIC_LOCAL=1 NODE_ENV=test next dev -p 8084",
     "test": "cross-env NEXT_PUBLIC_LOCAL=1 NODE_ENV=test next dev -p 8084",
-    "build": "sh lokalise.sh && next build",
+    "build": "next build",
     "build_local": "next build",
     "start_local": "sh start_local_copy.sh && node ./.next/standalone/server.js",
     "start": "node server.js",
