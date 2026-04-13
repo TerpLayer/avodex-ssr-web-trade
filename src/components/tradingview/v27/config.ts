@@ -66,13 +66,15 @@ interface Props {
   isColorReverse?: boolean;
 }
 
+const domainPublic = process.env.NODE_ENV === "development" ? "" : process.env.NEXT_PUBLIC_cdn + "/public";
+
 const config = (arg: Props) => {
   const { theme, isColorReverse } = arg;
   const themeObj = Theme[theme];
 
   return {
     library_path: "/charting_library27/",
-    custom_css_url: "/charting_library27/chart-sytle-ssr.css",
+    custom_css_url: domainPublic + "/assets/css/chart-sytle-ssr.css",
     timezone: getTimezone(),
     autosize: true,
     theme: themeObj.name,
@@ -121,7 +123,7 @@ const config = (arg: Props) => {
       "display_market_status", //关闭开市状态
       "popup_hints", //提示信息
       "legend_inplace_edit",
-      "create_volume_indicator_by_default",
+      // "create_volume_indicator_by_default",
     ],
     enabled_features: [
       "adaptive_logo", //小屏幕上隐藏 'charts byTradingView' 文本
