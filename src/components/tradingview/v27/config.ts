@@ -110,7 +110,11 @@ const config = (arg: Props) => {
       "mainSeriesProperties.areaStyle.color1": themeObj.lineColor_area_03,
       "mainSeriesProperties.areaStyle.color2": Color.transparent,
     },
-    studies_overrides: {},
+    studies_overrides: {
+      // 成交量柱颜色与 K 线涨跌色一致（color.0 跌 / color.1 涨）
+      "volume.volume.color.0": isColorReverse ? Color.green : Color.red,
+      "volume.volume.color.1": isColorReverse ? Color.red : Color.green,
+    },
     time_frames: [],
     disabled_features: [
       // "widget_logo", //tradingview logo
@@ -121,9 +125,9 @@ const config = (arg: Props) => {
       "display_market_status", //关闭开市状态
       "popup_hints", //提示信息
       "legend_inplace_edit",
-      "create_volume_indicator_by_default",
     ],
     enabled_features: [
+      "create_volume_indicator_by_default",
       "adaptive_logo", //小屏幕上隐藏 'charts byTradingView' 文本
       "dont_show_boolean_study_arguments", //是否隐藏指标参数
       "move_logo_to_main_pane", //logo在中间位置
