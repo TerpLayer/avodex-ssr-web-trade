@@ -4,7 +4,7 @@
 }
 
 .theme-dark .js-rootresizer__contents {
-  background-color: var(--az-colorv2-bg-surface, #111420) !important;
+  background-color: var(--az-colorv2-bg-surface, #131715) !important;
 }
 
 .theme-light .chart-controls-bar {
@@ -12,7 +12,7 @@
 }
 
 .theme-dark .chart-controls-bar {
-  background-color: var(--az-colorv2-bg-surface, #111420) !important;
+  background-color: var(--az-colorv2-bg-surface, #131715) !important;
 }
 
 .theme-light .group-BfVZxb4b,
@@ -22,7 +22,7 @@
 
 .theme-dark .group-BfVZxb4b,
 .theme-dark .fill-BfVZxb4b {
-  background-color: var(--az-colorv2-bg-surface, #111420) !important;
+  background-color: var(--az-colorv2-bg-surface, #131715) !important;
 }
 
 .theme-light .content-Z4M3tWHb {
@@ -30,7 +30,7 @@
 }
 
 .theme-dark .content-Z4M3tWHb {
-  background-color: var(--az-colorv2-bg-surface, #111420) !important;
+  background-color: var(--az-colorv2-bg-surface, #131715) !important;
 }
 
 /**/

@@ -103,7 +103,7 @@ const Content = ({ theme, children }) => {
       userInfo: appState.userInfo,
     });
 
-    console.log("%c【appState】", "color:#00aecc", appState);
+    // console.log("%c【appState】", "color:#00aecc", appState);
   }, [appState]);
 
   React.useEffect(() => {
