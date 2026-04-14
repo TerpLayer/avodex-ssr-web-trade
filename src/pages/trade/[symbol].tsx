@@ -2,7 +2,7 @@ import Nav from "@az/NavFlex";
 import { Request } from "@az/base";
 import { record } from "@az/acc";
 // import { get_currencyInfoOne } from "api/server/balance";
-import { get_symbol } from "api/server/market";
+import { get_symbol, get_builder_symbol } from "api/server/market";
 import Main from "components/pages/trade";
 import { GetStaticPaths, GetStaticProps } from "next";
 import React, { useEffect } from "react";
@@ -41,31 +41,32 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { params: { symbol = "" } = {}, locale } = context;
+  const defaultMarket = process.env.NEXT_PUBLIC_DEFAULT_MARKET || "btc_usdt";
 
   if (!symbol || typeof symbol !== "string") {
     return {
       redirect: {
-        destination: `/${locale}/trade/btc_usdt`,
+        destination: `/${locale}/trade/${defaultMarket}`,
         permanent: false,
       },
     };
   }
 
-  global.xtSymbols = global.xtSymbols || { symbols: [] };
-  console.log(symbol + " global.xtSymbols.version", global.xtSymbols.version);
+  global.builderSymbols = global.builderSymbols || { symbols: [] };
+  console.log(symbol + " global.builderSymbols.version", global.builderSymbols.version);
 
-  const symbolRet = await Request.AzAxios.asyncAwait(get_symbol, {
-    params: { version: global.xtSymbols.version },
+  const symbolRet = await Request.AzAxios.asyncAwait(process.env.NEXT_PUBLIC_BUILDER_CODE ? get_builder_symbol : get_symbol, {
+    params: { version: global.builderSymbols.version },
     headers: { "Accept-Encoding": "identity" },
   });
 
-  if (!symbolRet.err && symbolRet.data && symbolRet.data.version !== global.xtSymbols.version) {
-    global.xtSymbols = symbolRet.data;
-    console.log(symbol + " global.xtSymbols.version-new", global.xtSymbols.version);
+  if (!symbolRet.err && symbolRet.data && symbolRet.data.version !== global.builderSymbols.version) {
+    global.builderSymbols = symbolRet.data;
+    console.log(symbol + " global.builderSymbols.version-new", global.builderSymbols.version);
   }
 
-  const currentSymbolConfig = global.xtSymbols.symbols.find((obj) => obj.symbol === symbol);
-  if (symbol !== "btc_usdt" && (!currentSymbolConfig || currentSymbolConfig.displayLevel === "NONE")) {
+  const currentSymbolConfig = global.builderSymbols.symbols.find((obj) => obj.symbol === symbol);
+  if (symbol !== defaultMarket && (!currentSymbolConfig || currentSymbolConfig.displayLevel === "NONE")) {
     try {
       const logArg = {
         t: "trade",
@@ -73,7 +74,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
         msg: "symbol not found",
         symbol,
         currentSymbolConfig,
-        version: global.xtSymbols.version,
+        version: global.builderSymbols.version,
       };
       record(logArg);
       console.log(logArg);
@@ -83,7 +84,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
     return {
       redirect: {
-        destination: `/${locale}/trade/btc_usdt`,
+        destination: `/${locale}/trade/${defaultMarket}`,
         permanent: false,
       },
       revalidate: 60,
