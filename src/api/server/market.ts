@@ -14,6 +14,6 @@ export function get_symbol(config?) {
 
 //获取交易对
 export function get_builder_symbol(config?) {
-  const domain = process.env.NEXT_PUBLIC_ENV ? "https://app.azverse.xyz" : "https://app.az-qa.xyz";
+  const domain = process.env.NEXT_PUBLIC_ENV == "pro" ? "https://app.azverse.xyz" : "https://app.az-qa.xyz";
   return AzAxios4.get(`${domain}/sapi/v4/market/public/symbol`, config);
 }
