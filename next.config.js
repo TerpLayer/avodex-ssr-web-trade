@@ -1,3 +1,6 @@
+// @az/ssg 用 process.PROJECT_NAME 拼 seo.${name}.*，与 process.env 不同；现货站与 locales 中 seo.spot 对齐
+process.PROJECT_NAME = process.PROJECT_NAME || process.env.PROJECT_NAME || "spot";
+
 const fs = require("fs");
 const withPlugins = require("next-compose-plugins");
 const withLess = require("next-with-less");
