@@ -92,20 +92,21 @@ const nextConfig = {
     });
   },
   async redirects() {
+    const defaultMarket = process.env.NEXT_PUBLIC_DEFAULT_MARKET || "hive_usdt";
     return [
       {
         source: "/",
-        destination: "/trade/btc_usdt",
+        destination: `/trade/${defaultMarket}`,
         permanent: true,
       },
       {
         source: "/trade",
-        destination: "/trade/btc_usdt",
+        destination: `/trade/${defaultMarket}`,
         permanent: true,
       },
       {
         source: "/trade-order",
-        destination: "/trade-order/btc_usdt",
+        destination: `/trade-order/${defaultMarket}`,
         permanent: true,
       },
     ];

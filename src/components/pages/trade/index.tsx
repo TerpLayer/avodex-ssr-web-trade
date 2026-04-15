@@ -71,13 +71,14 @@ const Main: React.FC = () => {
   //客户端判断市场有效性，并获取币种信息
   useEffect(() => {
     if (!store.market.config) return;
-    let name = "btc_usdt";
+    const defaultMarket = process.env.NEXT_PUBLIC_DEFAULT_MARKET || "hive_usdt";
+    let name = defaultMarket;
     const { symbol } = router.query;
     if (symbol && typeof symbol === "string") {
       name = symbol;
     }
     if (!store.market.config[name]) {
-      name = "btc_usdt";
+      name = defaultMarket;
     }
     if (name !== symbol) {
       routerPush(router, { method: "replace", symbol: name });

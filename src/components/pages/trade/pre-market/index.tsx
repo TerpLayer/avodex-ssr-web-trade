@@ -22,7 +22,7 @@ const Main: React.FC<Props> = ({ className }) => {
 
   useEffect(() => {
     if (!symbols) return;
-    let name = "btc_usdt";
+    let name = process.env.NEXT_PUBLIC_DEFAULT_MARKET || "hive_usdt";
     const plateId = +(process.env.NEXT_PUBLIC_preMarketPlateId || "");
     const symbolAry = symbols.filter((obj) => {
       if (!obj.plates || !obj.plates.length) return false;
