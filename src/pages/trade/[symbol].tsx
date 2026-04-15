@@ -41,7 +41,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { params: { symbol = "" } = {}, locale } = context;
-  const defaultMarket = process.env.NEXT_PUBLIC_DEFAULT_MARKET || "btc_usdt";
+  const defaultMarket = process.env.NEXT_PUBLIC_DEFAULT_MARKET || "hive_usdt";
 
   if (!symbol || typeof symbol !== "string") {
     return {
