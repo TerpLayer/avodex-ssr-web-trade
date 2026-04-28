@@ -67,31 +67,31 @@ const Main: React.FC = () => {
             <img src={AVO} alt="AVO" />
           </div>
           <div className={styles.avoPairLabel}>AVO / USDT</div>
-          <div className={styles.avoPairSub}>AVO Token · 即將在 AvoDex 現貨上線</div>
+          <div className={styles.avoPairSub}>{t("trade.avo.subtitle")}</div>
           <div className={styles.avoPriceBox}>
-            <span className={styles.avoPriceLabel}>開盤參考價</span>
+            <span className={styles.avoPriceLabel}>{t("trade.avo.openPrice")}</span>
             <span className={styles.avoPriceVal}>${AVO_USDT_OPEN_PRICE}</span>
           </div>
-          <div className={styles.avoCountdownTitle}>距離開始交易</div>
+          <div className={styles.avoCountdownTitle}>{t("trade.avo.countdown")}</div>
           <div className={styles.avoTimer}>
             <div className={styles.timeDigit}>
               <span>{d}</span>
-              <span className={styles.timeUnit}>天</span>
+              <span className={styles.timeUnit}>{t("trade.day")}</span>
             </div>
             <div className={styles.timeSep}>:</div>
             <div className={styles.timeDigit}>
               <span>{h}</span>
-              <span className={styles.timeUnit}>時</span>
+              <span className={styles.timeUnit}>{t("trade.hour(s)")}</span>
             </div>
             <div className={styles.timeSep}>:</div>
             <div className={styles.timeDigit}>
               <span>{m}</span>
-              <span className={styles.timeUnit}>分</span>
+              <span className={styles.timeUnit}>{t("trade.minute(s)")}</span>
             </div>
             <div className={styles.timeSep}>:</div>
             <div className={styles.timeDigit}>
               <span>{s}</span>
-              <span className={styles.timeUnit}>秒</span>
+              <span className={styles.timeUnit}>{t("trade.second(s)")}</span>
             </div>
           </div>
         </div>
