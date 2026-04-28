@@ -255,6 +255,27 @@ const market = makeAutoObservable(
         .catch(() => {})
         .finally(() => {
           if (!this.symbols) this.symbols = symbols;
+          // mock avo_usdt for local testing
+          if (this.symbols && !this.symbols.find((s: any) => s.symbol === "avo_usdt")) {
+            this.symbols = [
+              ...this.symbols,
+              {
+                id: 99999,
+                symbol: "avo_usdt",
+                quantityPrecision: 2,
+                pricePrecision: 4,
+                plates: [],
+                state: "OFFLINE",
+                nextState: "ONLINE",
+                nextStateTime: new Date("2026-08-08T00:00:00+08:00").getTime(),
+                displayLevel: "FULL",
+                tradingEnabled: true,
+                displayWeight: 0,
+                depthMergePrecision: 4,
+                type: "normal",
+              },
+            ];
+          }
           loading_getMarketConfig = false;
         });
     }, //获取所有市场
@@ -285,6 +306,27 @@ const market = makeAutoObservable(
         .catch(() => {})
         .finally(() => {
           if (!this.symbols) this.symbols = symbols;
+          // mock avo_usdt for local testing
+          if (this.symbols && !this.symbols.find((s: any) => s.symbol === "avo_usdt")) {
+            this.symbols = [
+              ...this.symbols,
+              {
+                id: 99999,
+                symbol: "avo_usdt",
+                quantityPrecision: 2,
+                pricePrecision: 4,
+                plates: [],
+                state: "OFFLINE",
+                nextState: "ONLINE",
+                nextStateTime: new Date("2026-08-08T00:00:00+08:00").getTime(),
+                displayLevel: "FULL",
+                tradingEnabled: true,
+                displayWeight: 0,
+                depthMergePrecision: 4,
+                type: "normal",
+              },
+            ];
+          }
           CancelFun_loopGetMarketConfig = null;
           clearTimeout(TimeoutFun_loopGetMarketConfig);
           TimeoutFun_loopGetMarketConfig = setTimeout(() => {
