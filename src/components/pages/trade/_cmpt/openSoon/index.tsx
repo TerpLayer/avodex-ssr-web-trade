@@ -8,11 +8,15 @@ import store from "store";
 
 import styles from "./index.module.scss";
 import SvgIcon from "@az/SvgIcon";
+import AVO from "@/assets/img/avo.png";
+
+const AVO_USDT_OPEN_PRICE = "0.1500";
 
 const Main: React.FC = () => {
   const t = useTranslation();
   const { time } = store.app;
-  const { currentConfig } = store.market;
+  const { currentConfig, name } = store.market;
+  const isAvoUsdt = name === "avo_usdt";
 
   const [dateNow, setDateNow] = useState(Date.now());
   const timeObj = useMemo(() => {
@@ -50,6 +54,50 @@ const Main: React.FC = () => {
       clearInterval(interval);
     };
   }, []);
+
+  if (isAvoUsdt) {
+    const d = getStr(timeObj.day);
+    const h = getStr(timeObj.hour);
+    const m = getStr(timeObj.minute);
+    const s = getStr(timeObj.second);
+    return (
+      <div className={styles.avoCountdown}>
+        <div className={styles.avoInner}>
+          <div className={styles.avoIcon}>
+            <img src={AVO} alt="AVO" />
+          </div>
+          <div className={styles.avoPairLabel}>AVO / USDT</div>
+          <div className={styles.avoPairSub}>AVO Token · 即將在 AvoDex 現貨上線</div>
+          <div className={styles.avoPriceBox}>
+            <span className={styles.avoPriceLabel}>開盤參考價</span>
+            <span className={styles.avoPriceVal}>${AVO_USDT_OPEN_PRICE}</span>
+          </div>
+          <div className={styles.avoCountdownTitle}>距離開始交易</div>
+          <div className={styles.avoTimer}>
+            <div className={styles.timeDigit}>
+              <span>{d}</span>
+              <span className={styles.timeUnit}>天</span>
+            </div>
+            <div className={styles.timeSep}>:</div>
+            <div className={styles.timeDigit}>
+              <span>{h}</span>
+              <span className={styles.timeUnit}>時</span>
+            </div>
+            <div className={styles.timeSep}>:</div>
+            <div className={styles.timeDigit}>
+              <span>{m}</span>
+              <span className={styles.timeUnit}>分</span>
+            </div>
+            <div className={styles.timeSep}>:</div>
+            <div className={styles.timeDigit}>
+              <span>{s}</span>
+              <span className={styles.timeUnit}>秒</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (true)
     return (
