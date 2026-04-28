@@ -10,7 +10,7 @@ import styles from "./index.module.scss";
 import SvgIcon from "@az/SvgIcon";
 import AVO from "@/assets/img/avo.png";
 
-const AVO_USDT_OPEN_PRICE = "0.1500";
+const AVO_USDT_OPEN_PRICE = "1.5000";
 
 const Main: React.FC = () => {
   const t = useTranslation();
