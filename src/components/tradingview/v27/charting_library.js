@@ -494,7 +494,7 @@
               o = [];
             for (const s of t)
               s.endsWith(".js")
-                ? i.push(`<script defer crossorigin="anonymous" src="${s.replace("__LANG__", n)}"><\/script>`)
+                ? i.push(`<script defer crossorigin="anonymous" src="${s.replace("__LANG__", n)}?v=0507"><\/script>`)
                 : s.endsWith(".css") && o.push(`<link type="text/css" href="${e ? s.replace(/\.css$/i, ".rtl.css") : s}" rel="stylesheet"/>`);
             return [...i, ...o].join("\n");
           })(s, "rtl" === a.dir, r)}\n`;
