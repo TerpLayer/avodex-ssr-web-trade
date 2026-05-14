@@ -87,12 +87,17 @@ const nextConfig = {
   async rewrites() {
     // const sourceAry = ["uaapi", "sapi", "fapi", "dapi", "exapi/app", "exapi/lever", "exapi/redemption", "exapi/message", "exapi"];
     const host = process.env.NEXT_PUBLIC_protocol + "//" + process.env.NEXT_PUBLIC_host;
-    return proxyApi.map((path) => {
+    const list = proxyApi.map((path) => {
       return {
         source: `/${path}/:slug*`,
         destination: `${host}/${path}/:slug*`,
       };
     });
+    list.push({
+      source: `/service/:slug*`,
+      destination: `${host}/service/:slug*`,
+    });
+    return list;
   },
   async redirects() {
     const defaultMarket = process.env.NEXT_PUBLIC_DEFAULT_MARKET || "hive_usdt";
